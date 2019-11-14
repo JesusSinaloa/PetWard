@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="div-container-items">
+  {{#if auditions}}
+  {{#each auditions}}
+    <div class="row div-container-item-audition">
+      <div class="col l1 div-icon1-item-audition">
+        <i class="far fa-sticky-note fa-2x"></i>
+      </div>
+      <div class="col l5">
+        <span>{{id}}</span>
+      </div>
+      <div class="col l4">
+        <span>{{status}}</span>
+      </div>
+      <div class="col l2">
+        <a href="/auditions/view-audition/{{_id}}">
+          <i class="far fa-eye"></i>
+        </a>
+      </div>
+    </div>
+  {{/each}}
+  {{else}}
+    <div class="div-audition-not-found">
+      <h3>Aun no tines audiciones pagadas.</h3>
+    </div>
+  {{/if}}
+  </div>
+</div>

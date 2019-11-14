@@ -1,0 +1,82 @@
+footer{
+  background-color: #8f128e !important;
+
+}
+#waves{
+
+  background-image: url("/images/waves2.png");
+  min-height: 300px;
+  width: 100%;
+  padding: 194px;
+  background-repeat: no-repeat;
+}
+
+
+.footer-copyright{
+  background-color: #5e075e !important;
+}
+.div-icons{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.div-icons img{
+  width: 100%;
+
+
+}
+#foo-red-social{
+
+}
+hr{
+height: 1px !important;
+color: white !important;
+background-color: white !important;
+border: none !important;
+}
+.div-foo-logo {
+  text-align: left;
+}
+.div-foo-logo img{
+  width: 20%;
+}
+.div-container-uls-foo div{
+  text-align: left;
+}
+.div-container-uls-foo div strong{
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 15pt;
+}
+.div-container-uls-foo div ul{
+  text-align: left;
+}
+.div-container-uls-foo div ul li{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 10pt;
+}
+.div-container-uls-foo div p{
+  text-align: justify;
+  color: white;
+  letter-spacing: 1px;
+}
+.div-container-uls-foo div button{
+  background: none !important;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 10pt;
+  color: white;
+  box-shadow: none !important;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.div-foo-copyright-social-red i{
+  font-size: 35px;
+  color: white;
+  margin-right: 15px;
+}
+.div-span-copyright{
+  padding-top: 10px;
+}

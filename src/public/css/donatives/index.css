@@ -1,0 +1,117 @@
+.div-layer-presentation-donative{
+    margin-bottom: 0 !important;
+}
+.div-layer-donative-img{
+  text-align: center;
+}
+.div-layer-donative-img img{
+  width: 50%;
+  height: auto;
+}
+.div-left-layer-donative{
+  padding: 50px !important;
+}
+.div-layer-donative-h1 h1{
+  font-size: 50pt;
+  letter-spacing: 1px;
+  color: #505050;
+}
+.div-layer-donative-p p{
+  letter-spacing: 1px;
+  color: #969696;
+  font-size: 18pt;
+  text-align: justify;
+}
+.div-layer-donative-button button{
+  background: none !important;
+  color: purple;
+  font-size: 9pt;
+  letter-spacing: 1px;
+  border: 2px solid purple;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: none !important;
+}
+.div-container-welcoming-center-donative{
+  margin-top: -5px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+.div-icon-welcome-center-donative i{
+  font-size: 50px;
+  color: #505050;
+}
+.div-h1-welcome-center-donative h1{
+  color: #505050;
+  font-size: 30pt;
+  letter-spacing: 1px;
+}
+.div-p-welcome-center-donative{
+
+}
+.div-p-welcome-center-donative p{
+
+    font-size: 15pt;
+    color: #505050;
+    letter-spacing: 1px;
+}
+.div-association-donative{
+  height: 567px;
+  margin-top: 100px;
+
+}
+.div-left-association-donative{
+  padding: 20px !important;
+  height: 567px;
+}
+.div-presentation-association-donative h3{
+    color: #505050;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    margin-bottom: 50px;
+}
+.div-presentation-association-donative p{
+    color: #969696;
+    letter-spacing: 1px;
+    font-size: 12pt;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.div-list-pros-association-donative ul{
+  padding-left: 10px;
+}
+.div-list-pros-association-donative ul li i{
+  color: #505050;
+  font-size: 15pt;
+  margin-right: 10px;
+}
+.div-list-pros-association-donative ul li span{
+  color: #505050;
+  font-size: 13pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+}
+.div-btn-association-donative a{
+  background-color: #ffef00 !important;
+  color: #8e5000 !important;
+  font-size: 10pt;
+  margin-top: 50px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  width: 70%;
+
+  font-weight: bold;
+  box-shadow: none !important;
+
+}
+
+
+.div-right-association-donative{
+  padding: 0 !important;
+  height: 567px;
+}
+.div-right-association-donative img{
+  height: 100% !important;
+}

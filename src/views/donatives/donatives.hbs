@@ -1,0 +1,75 @@
+<section>
+  <div class="div-layer-presentation-donative row">
+    <div class="col l5 div-left-layer-donative">
+      <div class="div-layer-donative-h1">
+          <h1>Nosotros cuidamos sus vidas.</h1>
+      </div>
+      <div class="div-layer-donative-p">
+        <p>Siempre tratamos de brindarle la oportunidad de una mejor vida. </p>
+      </div>
+      <div class="div-layer-donative-button">
+        <button type="button" name="button"class="btn">saber mas</button>
+      </div>
+    </div>
+    <div class="col l7 div-layer-donative-img">
+      <img src="/images/donatives/donative_layer_index.png" alt="">
+    </div>
+  </div>
+  <div class="div-container-welcoming-center-donative">
+    <div class="container">
+      <div class="div-icon-welcome-center-donative center">
+        <i class="fas fa-paw"></i>
+      </div>
+      <div class="div-h1-welcome-center-donative center">
+        <h1>Bienvenido al centro de donativos PetWard</h1>
+      </div>
+      <div class="div-p-welcome-center-donative center">
+        <p>El centro de donativos PetWard se encarga de recibir donaciones,
+        voluntarias y acerlos llegar a la respectiva asociación.</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <!--LEFT-->
+      {{#each asociations}}
+      <div class="row col l12 s12 m12 z-depth-1 div-association-donative">
+        <div class="col l7 div-left-association-donative">
+          <div class="div-presentation-association-donative">
+            <h3>{{nombre}}</h3>
+            <p>{{descripcion}}</p>
+          </div>
+          <div class="div-list-pros-association-donative">
+            <ul>
+              <li>
+                <i class="fas fa-paw"></i>
+                <span>Mascotas alojadas: {{alojadas}}.</span>
+              </li>
+              <li>
+                <i class="fas fa-paw"></i>
+                <span>Recibe hasta {{donativos}} por mes, ayudan a que sean mas.</span>
+              </li>
+              <li>
+                <i class="fas fa-paw"></i>
+                <span>Realiza hasta {{rescates}} de mascotas callejeras.</span>
+              </li>
+              <li>
+                <i class="fas fa-paw"></i>
+                <span>Cuenta con {{meritos}} certificaciones.</span>
+              </li>
+
+            </ul>
+          </div>
+          <div class="div-btn-association-donative center">
+              <a class="btn" href="donative/{{_id}}">Donar</a>
+          </div>
+        </div>
+        <div class="col l5 div-right-association-donative">
+          <img src="/images/donatives/dogger_img_big_1.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+      {{/each}}
+
+
+    </div>
+  </div>
+</section>

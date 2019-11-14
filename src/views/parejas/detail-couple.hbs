@@ -1,0 +1,42 @@
+
+    <div class="col l8 offset-l2">
+      <div class="card z-depth-1">
+        <div class="image-pet-modal">
+          <img class="activator card-image-modal" src="/images/couple/{{couple.imagen0}}">
+        </div>
+        <div class="name-pet-modal">
+          <h5>Hola Soy {{couple.nombre}}!</h5>
+          <label> {{couple.apodo}}</label>
+        </div>
+        <hr>
+        <div class="description-pet-modal">
+          <p>{{couple.descripcion}}</p>
+        </div>
+        <div class="div-btn-message">
+          {{#if user}}
+          <a class="modal-trigger" href="#modal2">
+            <i class="far fa-comment-dots fa-3x send-message"></i>
+          </a>
+          {{else}}
+          <label>Debes iniciar sesión para poder enviar mensaje</label>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <form class="form-send-message" action="/send-message/to-couple" method="POST">
+
+          <h4 class="center">Escribe tu mensaje</h4>
+          <textarea name="mensaje" ></textarea>
+          <input type="hidden" name="user" value="{{user.id}}">
+          <input type="hidden" name="id_pet" value="{{couple._id}}">
+          <button type="submit" class="btn boton center">Enviar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+      </div>
+    </div>

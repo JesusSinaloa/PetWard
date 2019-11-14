@@ -1,0 +1,418 @@
+<div class="row container">
+  <div class="col l12">
+    <div class="card card-data-user">
+      <form method="POST" action="/pet/update-pet/{{pet._id}}?_method=PUT">
+        <input type="hidden" name="_method" value="PUT">
+      <div class="card-content row">
+        <div class="col l12 div-title-card-data-user">
+          <span>Edita la información de tu mascota</span>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 div-title-card-data-user">
+            <span>Informacion General</span>
+          </div>
+          <div class="col l6">
+            <span>Nombre</span>
+            <input type="text" name="nombre" value="{{pet.nombre}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Edad</span>
+            <input type="text" name="edad" value="{{pet.edad}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Raza</span>
+            <input type="text" name="raza" value="{{pet.raza}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Color</span>
+            <input type="text" name="color" value="{{pet.color}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Sexo</span>
+              <select class="browser-default" name="sexo" required>
+            {{#if pet.sexo}}
+            <option value=1  selected>Macho</option>
+            {{else}}
+            <option value=0  selected>Hembra</option>
+            {{/if}}
+
+
+              <option value=1>Macho</option>
+              <option value=0>Hembra</option>
+
+            </select>
+          </div>
+          <div class="col l6 ">
+            <span>Tipo</span>
+            <select class="browser-default" name="tipo" required>
+              <option value="{{pet.tipo}}"  selected>{{pet.tipo}}</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+            </select>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 ">
+            <span>Descripcion</span>
+            <textarea name="descripcion" rows="8" cols="80">{{pet.descripcion}}</textarea>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Imagen 1</span>
+            <input type="file" name="imagen0" value="">
+          </div>
+          <div class="col l6 ">
+            <span>Imagen 2</span>
+            <input type="file" name="imagen1" value="">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Imagen 3</span>
+            <input type="file" name="imagen2" value="">
+          </div>
+          <div class="col l6 ">
+            <span>Imagen 4</span>
+            <input type="file" name="imagen3" value="">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 div-title-card-data-user">
+            <span>Salud</span>
+          </div>
+          <div class="row col l12 div-in-about">
+            <div class="col l6">
+              <span>Sufre Anemia:</span>
+              <select class="browser-default" name="anemia" id="select-type-pet">
+                <option value="{{pet.salud.[0].anemia}}"  selected>{{pet.salud.[0].anemia}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+
+            </div>
+            <div class="col l6">
+              <span>Tiene Problemas Respiratorios</span>
+              <select class="browser-default" name="respiratorio" id="select-type-pet">
+                <option value="{{pet.salud.[0].respiratorio}}"  selected>{{pet.salud.[0].respiratorio}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Sufre Fracturas:</span>
+              <select class="browser-default" name="fracturas" id="select-type-pet">
+                <option value="{{pet.salud.[0].fracturas}}"  selected>{{pet.salud.[0].fracturas}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Sufre de Lesiones Musculares:</span>
+              <select class="browser-default" name="lesiones" id="select-type-pet">
+                <option value="{{pet.salud.[0].lesiones}}"  selected>{{pet.salud.[0].lesiones}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Esta Esterilizado:</span>
+              <select class="browser-default" name="esterilizado" id="select-type-pet">
+                <option value="{{pet.salud.[0].esterilizado}}"  selected>{{pet.salud.[0].esterilizado}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Tiene Problemas Urinarios:</span>
+              <select class="browser-default" name="urinarios" id="select-type-pet">
+                <option value="{{pet.salud.[0].urinarios}}"  selected>{{pet.salud.[0].urinarios}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Sufre de Alergías:</span>
+              <select class="browser-default" name="alergias" id="select-type-pet">
+                <option value="{{pet.salud.[0].alergias}}"  selected>{{pet.salud.[0].alergias}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Sufre de Diabetes:</span>
+              <select class="browser-default" name="diabetes" id="select-type-pet">
+                <option value="{{pet.salud.[0].diabetes}}"  selected>{{pet.salud.[0].diabetes}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Problemas Oculares:</span>
+              <select class="browser-default" name="oculares" id="select-type-pet">
+                <option value="{{pet.salud.[0].oculares}}"  selected>{{pet.salud.[0].oculares}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Problemas de Voz:</span>
+              <select class="browser-default" name="voz" id="select-type-pet">
+                <option value="{{pet.salud.[0].voz}}"  selected>{{pet.salud.[0].voz}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Problemas de Oido:</span>
+              <select class="browser-default" name="oido" id="select-type-pet">
+                <option value="{{pet.salud.[0].oido}}"  selected>{{pet.salud.[0].oido}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Problemas Dentales:</span>
+              <select class="browser-default" name="dental" id="select-type-pet">
+                <option value="{{pet.salud.[0].dental}}"  selected>{{pet.salud.[0].dental}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Tiene Garrapatas:</span>
+              <select class="browser-default" name="garrapatas" id="select-type-pet">
+                <option value="{{pet.salud.[0].garrapatas}}"  selected>{{pet.salud.[0].garrapatas}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Tiene Pulgas:</span>
+              <select class="browser-default" name="pulgas" id="select-type-pet">
+                <option value="{{pet.salud.[0].pulgas}}"  selected>{{pet.salud.[0].pulgas}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Tiene Sarna:</span>
+              <select class="browser-default" name="sarna" id="select-type-pet">
+                <option value="{{pet.salud.[0].sarna}}"  selected>{{pet.salud.[0].sarna}}</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="Se Desconoce">Se Desconoce</option>
+              </select>
+            </div>
+            <div class="col l6">
+              <span>Otras:</span>
+              <textarea name="otros" rows="8" cols="80" class="text-area">{{pet.salud.[0].otros}}</textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 div-title-card-data-user">
+            <span>Vacunas</span>
+          </div>
+          <input type="hidden" id="type-pet" name="" value="{{pet.tipo}}">
+          <div id="vacunas-register-dog">
+            <div class="col l6">
+              <label>Primovacunación</label>
+                <select class="browser-default" name="vacuna1Perro">
+                  {{#if pet.vacunas.[0].vacuna}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Polivalente</label>
+                <select class="browser-default" name="vacuna2Perro">
+                  {{#if pet.vacunas.[0].vacuna2}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Refuerzo polivalente</label>
+                <select class="browser-default" name="vacuna3Perro">
+                  {{#if pet.vacunas.[0].vacuna3}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Antirrabica</label>
+                <select class="browser-default" name="vacuna4Perro">
+                  {{#if pet.vacunas.[0].vacuna4}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Desparacitación</label>
+                <select class="browser-default" name="vacuna5Perro">
+                  {{#if pet.vacunas.[0].vacuna5}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Vacunas anuales</label>
+                <select class="browser-default" name="vacuna6Perro">
+                  {{#if pet.vacunas.[0].vacuna6}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+          </div>
+          <div id="vacunas-register-cat">
+            <div class="col l6">
+              <label>Leucemia Felina</label>
+                <select class="browser-default" name="vacuna1Gato">
+                  {{#if pet.vacunas.[0].vacuna1}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Trivalente</label>
+                <select class="browser-default" name="vacuna2Gato">
+                  {{#if pet.vacunas.[0].vacuna2}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Refuerzo trivalente</label>
+                <select class="browser-default" name="vacuna3Gato">
+                  {{#if pet.vacunas.[0].vacuna3}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Rabia</label>
+                <select class="browser-default" name="vacuna4Gato">
+                  {{#if pet.vacunas.[0].vacuna4}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Desparacitación</label>
+                <select class="browser-default" name="vacuna5Gato">
+                  {{#if pet.vacunas.[0].vacuna5}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+            <div class="col l6">
+              <label>Vacunas anuales</label>
+                <select class="browser-default" name="vacuna6Gato">
+                  {{#if pet.vacunas.[0].vacuna6}}
+                  <option value=1  selected>Sí</option>
+                  {{else}}
+                  <option value=0  selected>No</option>
+                  {{/if}}
+                  <option value=1>Sí</option>
+                  <option value=0>No</option>
+                </select>
+            </div>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 div-title-card-data-user">
+            <span>Ubicación</span>
+          </div>
+            <div class="col l6">
+              <span>Estado:</span>
+              <input type="text" class="input-text" name="estado" value="{{pet.ubicacion.[0].estado}}">
+            </div>
+            <div class="col l6">
+              <span>Ciudad:</span>
+              <input type="text" class="input-text" name="ciudad" value="{{pet.ubicacion.[0].ciudad}}">
+            </div>
+            <div class="col l6">
+              <span>Calle:</span>
+              <input type="text" class="input-text" name="calle" value="{{pet.ubicacion.[0].calle}}">
+            </div>
+            <div class="col l6">
+              <span>Colonia:</span>
+              <input type="text" class="input-text" name="colonia" value="{{pet.ubicacion.[0].colonia}}">
+            </div>
+            <div class="col l6">
+              <span>CP:</span>
+              <input type="text" class="input-text" name="cp" value="{{pet.ubicacion.[0].cp}}">
+            </div>
+        </div>
+
+        <div class="col l12 div-btn-accion-perfil">
+          <button class="btn boton" type="submit" >Actualizar</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

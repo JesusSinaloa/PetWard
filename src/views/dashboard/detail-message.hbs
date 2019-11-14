@@ -1,0 +1,93 @@
+<div class="container">
+  <input type="hidden" name="" value="{{user.id}}" id="user-id-mesage">
+  <input type="hidden" name="" value="{{message.pet.[0].pertenece}}" id="pertenece-pet-message">
+  <div class="row div-card">
+    <div class="col l8 div-card-left">
+      <div class="div-from row">
+        <div class="col l1 left">
+          <div class="img-from">US</div>
+        </div>
+        <div class="col l11 right">
+          <span>De: {{message.send_by.[0].nameUser}}</span>
+        </div>
+      </div>
+      <div class="div-to">
+        <label>{{message.dateCreated}}</label><br>
+        <span> Para: {{message.received_by.[0].nameUser}}</span>
+      </div>
+
+      <div class="div-message">
+        <p>{{message.text}}</p>
+      </div>
+      <div class="div-response">
+        <form action="/messages/send-response" method="POST">
+
+          <input type="hidden" name="id_message" value="{{message._id}}">
+          <textarea name="message" rows="8" cols="80" placeholder="Responde algo..."></textarea>
+          <button type="submit" class="btn boton">Responder</button>
+          </form>
+      </div>
+    </div>
+    <div class="col l4 div-card-right">
+      <div class="col l12 div-pet-message">
+        <div class="div-image-pet-message">
+          {{#if pet.adopted}}
+          <img src="/images/pets/{{pet.imagen0}}" alt="imagen-pet">
+
+          {{else}}
+          <img src="/images/couple/{{pet.imagen0}}" alt="imagen-pet">
+          {{/if}}
+        </div>
+
+      <div class="div-descripcion-pet-message">
+        <span>{{pet.nombre}}</span><br>
+        <span>{{pet.color}}</span><br>
+        <span>{{pet.raza}}</span><br>
+      </div>
+      {{#if pet.isCouple}}
+
+      {{else}}
+        {{#if arrayProccess.[0].solicitud}}
+        <form method="POST" action="/adopt/message/status">
+          <input type="hidden" name="idUser" value="{{user.id}}">
+          <input type="hidden" name="idMessage" value="{{message._id}}">
+          <input type="hidden" name="proccess" value="0">
+          <button type="submit" name="button" id="a-adopt-message">Quiero adoptarlo!!</button>
+        </form>
+
+        {{/if}}
+        {{#if arrayProccess.[0].conclusion}}
+          <span id="span-reunion">Acuerda una cita para adopción</span>
+          <form method="POST" action="/adopt/message/status">
+            <input type="hidden" name="idUser" value="{{user.id}}">
+            <input type="hidden" name="idMessage" value="{{message._id}}">
+            <input type="hidden" name="proccess" value="1">
+            <button type="submit" name="button" id="a-recoger-message">Ya tengo la mascota</button>
+          </form>
+          <input type="hidden" id="in-recoger-message" value=true>
+        {{/if}}
+        {{#if arrayProccess.[0].adopted}}
+          <span id="span-adopted">Esta mascota ya se ha adoptado</span>
+          <input type="hidden" id="in-pet-wasAdopted" value=true>
+        {{/if}}
+      {{/if}}
+      </div>
+      <div class="col l12 div-audit-pet">
+        {{#if arrayProccess.[0].adopted}}
+        <a href="/auditar-pet/{{message._id}}" class="btn btn-auditar">Auditar</a><br>
+        {{else}}
+          <a href="/auditar-pet/{{message._id}}" class="btn btn-auditar">Auditar</a><br>
+        {{/if}}
+        <div class="what-is-audit">
+          <span>Costo: $250.00</span>
+          <p>Que es auditar, Pet Ward se encargar de verificar
+          la condicion de la mascota que quieres adoptar, asi
+        como su estado de salud y todo su entorno donde vive, estado psicologico o en caso
+        contrario si la persona es apta para tener a tu macota</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

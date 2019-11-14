@@ -1,0 +1,108 @@
+.contenedor{
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+.tarjeta{
+    border-radius: 15px;
+    height: 550px;
+    width: auto;
+}
+.div-logotipo{
+    height: 100%;
+    width: auto;
+    /*background-color: rgb(128,0,128,0.1);*/
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*background-color: #f3ecff;*/
+}
+.logo-pet-ward-login-form{
+  width: 180px;
+}
+.div-formulario{
+   height: 100%;
+   width: auto;
+   text-align: center;
+
+}
+.div-in-usuario{
+  text-align: left;
+}
+.div-in-pass{
+  text-align: left;
+}
+.div-logotipo img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub-div-formulario{
+    margin: 0;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+.sub-div-formulario h3{
+font-size: 25pt;
+letter-spacing: 1px;
+font-weight: bold;
+text-transform: uppercase;
+color: #505050 !important;
+}
+.sub-div-formulario span{
+  color: #505050 !important;
+}
+.div-contenedor{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub-div-formulario span{
+  font-size: 10pt;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: bold;
+}
+.sub-div-formulario a{
+  letter-spacing: 1px;
+  color: white;
+
+}
+.up-session{
+  width: 90%;
+  border-radius: 15px !important;
+}
+.not-account{
+  color: purple !important;
+}
+.not-account-span{
+  color: #505050;
+}
+#user{
+  border: 1px solid #969696 !important;
+  border-radius: 5px !important;
+  padding: 9px !important;
+  height: 18px !important;
+  margin-right: 5px !important;
+  width: 95% !important;
+}
+#password{
+  border: 1px solid #969696 !important;
+  border-radius: 5px !important;
+  padding: 9px !important;
+  height: 18px !important;
+  margin-right: 5px !important;
+  width: 95% !important;
+}
+#hr-line-login-form{
+  height: 1px !important;
+
+color: silver !important;
+  background-color:  silver !important;
+  border: none !important;
+  margin-top: 50px;
+}

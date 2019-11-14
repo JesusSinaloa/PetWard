@@ -1,0 +1,95 @@
+
+<div class="row container">
+  <div class="col l8">
+    <div class="card card-data-user">
+      <form method="POST" action="/perfil/edit-perfil/{{user.id}}?_method=PUT">
+      <input type="hidden" name="_method" value="PUT">
+      <div class="card-content row">
+        <div class="col l12 div-title-card-data-user">
+          <span>Edita tu perfil</span>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6">
+            <span>Nombre</span>
+            <input type="text" name="nombre" value="{{dataUser.nombre}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Apellidos</span>
+            <input type="text" name="apellidos" value="{{dataUser.apellidos}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Estado</span>
+            <input type="text" name="estado" value="{{dataUser.estado}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Ciudad</span>
+            <input type="text" name="ciudad" value="{{dataUser.ciudad}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Email</span>
+            <input type="text" name="email" value="{{dataUser.email}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Telefono</span>
+            <input type="text" name="telefono" value="{{dataUser.telefono}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Sexo</span>
+            <input type="text" name="sexo" value="{{dataUser.sexo}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <a href="#" class="action-link-update-pass">Quieres actualizar tu password?</a>
+        </div>
+        <div class="col l12 div-btn-accion-perfil">
+          <button class="btn boton" type="submit" >Actualizar</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+  <div class="col l4">
+  <form method="POST" action="/perfil/edit-image-perfil" enctype="multipart/form-data">
+    <div class="card card-presentation-user">
+      <div class="card-content ">
+        <div class="div-bg-img">
+          <img src="/images/bg-user-card.png" alt="">
+        </div>
+        <div class="img-user-circle">
+          {{#if dataUser.image}}
+          <img src="/images/perfil/{{dataUser.image}}" alt="">
+          {{else}}
+          <img src="/images/profile-pic-nav.png" id="img-upload" alt="">
+          <input type="file" name="img" id="in-image" style="display: none;">
+          <input type="hidden" name="idUser" value="{{user.id}}">
+          {{/if}}
+        </div>
+        <div class="div-description-user">
+          <span>{{dataUser.nombre}}</span>
+        </div>
+        <div class="div-description-cont">
+          <span>{{dataUser.email}}</span><br>
+          <span>{{dataUser.telefono}}</span><br>
+          <span>{{dataUser.ciudad}}</span><br>
+        </div>
+      </div>
+      <div class="card-action">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="div-btn-update-pic-perfil">
+        <button type="submit" id="btn-update-pic-perfil">Actualizar foto</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>

@@ -1,0 +1,156 @@
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background-color: #efeef1;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+ .slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #8e24aa;
+}
+.boton {
+  background: none;
+  color: white;
+  font-size: 9pt;
+  letter-spacing: 1px;
+  background-color: #8e24aa !important;
+  border-radius: 3px;
+}
+.input-text{
+  border: 1px solid #969696 !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  height: 18px !important;
+  margin-right: 5px !important;
+  width: 98% !important;
+  box-shadow: none !important;
+}
+.input-password{
+  border: 1px solid #969696 !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  height: 18px !important;
+  margin-right: 5px !important;
+  width: 98% !important;
+  box-shadow: none !important;
+}
+.text-area{
+    border: 1px solid #969696 !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    box-shadow: none !important;
+  }
+/* label color */
+  .input-field label {
+    color: none;
+  }
+
+  /*INPUT TYPE TEXT*/
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: none !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: none !important;
+  }
+
+
+  /*INPUT TYPE PASSWORD*/
+  /* label focus color */
+  .input-field input[type=password]:focus + label {
+    color: none !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=password]:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* valid color */
+  .input-field input[type=password].valid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* invalid color */
+  .input-field input[type=password].invalid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: none !important;
+  }
+
+  /*INPUT TYPE search*/
+  /* label focus color */
+  .input-field input[type=search]:focus + label {
+    color: none !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=search]:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* valid color */
+  .input-field input[type=search].valid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* invalid color */
+  .input-field input[type=search].invalid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: none !important;
+  }
+  .div-success{
+    text-align: center;
+    background-color: #6def71;
+    color: white;
+    font-size: 20pt;
+    border: 1px solid #06ca27;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .div-errors{
+
+    text-align: center;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 20pt;
+    border: 1px solid #f31919;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }

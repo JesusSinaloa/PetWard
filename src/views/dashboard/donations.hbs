@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="div-table-donations">
+    <table class="highlight centered table-donations">
+        <thead>
+          <tr>
+              <th>Estatus</th>
+              <th>Total</th>
+              <th>Moneda</th>
+              <th>Descripción</th>
+              <th>Acción</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {{#each donations}}
+          <tr>
+            <td>{{state}}</td>
+            <td>{{transaction.[0].total}}</td>
+            <td>{{transaction.[0].currency}}</td>
+            <td>{{transaction.[0].description}}</td>
+            <td><a href="/detail-donative/{{_id}}"><i class="fas fa-eye"></i></a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+  </div>
+</div>

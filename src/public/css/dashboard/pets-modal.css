@@ -1,0 +1,90 @@
+.div-image-pets-modal img{
+  border-radius: 50%;
+  border: 5px solid purple;
+}
+.div-name-pets-modal{
+  letter-spacing: 1px;
+  font-size: 20pt;
+  color: #505050;
+}
+.subdiv-image-pets-modal div img{
+  border-radius: 50%;
+  border: 2px solid #969696
+}
+.div-modal-icons div i{
+  color: #505050;
+
+}
+.modal-content-right{
+  padding-left: 40px !important;
+}
+.modal-content-right div span{
+color: #505050;
+letter-spacing: 1px;
+font-size: 11pt;
+
+}
+}.modal-content-right div p{
+color: #505050;
+letter-spacing: 1px;
+font-size: 11pt;
+text-align: justify;
+
+}
+.modal-content-right div label{
+color: #969696;
+letter-spacing: 1px;
+font-size: 11pt;
+
+}
+.modal-content-right div strong{
+color: #505050;
+letter-spacing: 1px;
+font-size: 11pt;
+
+}
+
+.div-info h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-adopted h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-vacunas h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-salud h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-ubicacion h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.genero-revel-index-macho-modal{
+  color: #2e76ff;
+  font-size: 20px;
+}
+.genero-revel-index-hembra-modal{
+  color: #fe9be9;
+  font-size: 20px;
+}
+#div-vacunas-perro{
+
+}
+#div-vacunas-gato{
+  
+}
+#div-vacunas-perro div h5{
+  color: #505050;
+  letter-spacing: 1px;
+
+}
+#div-vacunas-gato div h5{
+  color: #505050;
+  letter-spacing: 1px;
+
+}

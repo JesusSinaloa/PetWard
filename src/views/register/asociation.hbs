@@ -1,0 +1,137 @@
+<section class="container">
+  <div class="row div-body-register" id="card-register">
+    <div class="col l12">
+      <br><br><br>
+          <div class="card" style="box-shadow: none;">
+            <div class="card-content-register">
+              <div class="col l12 row div-container-form-register">
+                <form class="subdiv-form-container-register row" method="POST" action="/Register/add-asociation" enctype="multipart/form-data">
+                  <span class="span-title-section">Datos:</span><br>
+                  <div class="col l12 row div-register-data-association">
+                    <div class="col l6">
+                      <div class="">
+                        <span>Nombre de la asociación</span>
+                        <input type="text" name="nombre" value="{{nombre}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Password</span>
+                        <input type="password" name="password" value="{{password}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Confirma el password</span>
+                        <input type="password" name="confirmpass" value="{{confirmpass}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Email</span>
+                        <input type="email" name="email" value="{{email}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Telefono</span>
+                        <input type="text" name="telefono" value="{{telefono}}" class="input-text validate">
+                      </div>
+                    </div>
+                    <div class="col l6">
+                      <div class="">
+                        <span>Estado</span>
+                        <input type="text" name="estado" value="{{estado}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Ciudad</span>
+                        <input type="text" name="ciudad" value="{{ciudad}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Calle</span>
+                        <input type="text" name="calle" value="{{calle}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>Colonia</span>
+                        <input type="text" name="colonia" value="{{colonia}}" class="input-text validate">
+                      </div>
+                      <div class="">
+                        <span>CP</span>
+                        <input type="text" name="cp" value="{{cp}}" class="input-text validate">
+                      </div>
+                    </div>
+
+
+                </div>
+                <span class="span-title-section">Media:</span><br>
+                <div class="col l12 row div-register-media-association">
+                  <div class="col l6">
+                    <div class="">
+                      <span>Logotipo: </span>
+                      <input type="file" name="logo" class="in-file-asociation">
+                    </div>
+                    <div class="">
+                      <span>Imagenes: </span>
+                      <input type="file" name="images" class="in-file-asociation" multiple>
+                    </div>
+                    <div class="">
+                      <span>Videos: </span>
+                      <input type="file" name="videos" class="in-file-asociation" multiple>
+                    </div>
+
+                  </div>
+                  <div class="col l6">
+                    <div class="">
+                      <span>Facebook</span>
+                      <input type="url" name="facebook" value="{{facebook}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Instagram</span>
+                      <input type="url" name="instagram" value="{{instagram}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Twitter</span>
+                      <input type="url" name="twitter" value="{{twitter}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Google</span>
+                      <input type="url" name="google" value="{{google}}" class="input-text validate">
+                    </div>
+                  </div>
+                </div>
+                <span class="span-title-section">Estadisticas:</span><br>
+                <div class="col l12 row div-register-estadisticas-association">
+                  <div class="col l6">
+                    <div class="">
+                      <span>Cuantas mascotas tiene alojadas:</span>
+                      <input type="text" name="alojadas" value="{{alojadas}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Cuantos donativos promedio por mes recibes:</span>
+                      <input type="text" name="donativos" value="{{donativos}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Cuantas rescates promedio por mes haces:</span>
+                      <input type="text" name="rescates" value="{{rescates}}" class="input-text validate">
+                    </div>
+                  </div>
+                  <div class="col l6">
+                    <div class="">
+                      <span>Tiene meritos, mencione cunatos (Opcional):</span>
+                      <input type="text" name="meritos" value="{{meritos}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Proporcione una cuenta bancaria para recibir donativos:</span>
+                      <input type="tel" name="cuenta" value="{{cuenta}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Descripción general de la asociación:</span>
+                      <textarea name="descripcion" rows="8" value="{{descripcion}}" cols="80"></textarea>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="div-btn-register-form">
+                  <button type="submit" class="btn boton">Register</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>

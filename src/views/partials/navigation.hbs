@@ -1,0 +1,39 @@
+<nav>
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo left"><img src="/images/petWardLogo.png" alt="Logotipo"></a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down black-text">
+      <li><a id="btn-show-input-search" href="#modalSearch" class="modal-trigger"><i class="fas fa-search nav-bar-btn"></i></a></li>
+      {{#if user.role}}
+
+      {{else}}
+      <li><a href="Parejas" class="nav-bar-btn">Parejas</a></li>
+      {{/if}}
+      <!--
+      <li><a href="Vestimenta" class="nav-bar-btn">Vestimenta</a></li>
+      <li><a href="Foro" class="nav-bar-btn">Foro</a></li>
+    -->
+      {{#if user}}
+      <li><a href="/Login/logout" class="nav-bar-btn"><i class="fas fa-sign-out-alt fa-1x"></i></a></li>
+      <li><a href="/show-dashboard" class="nav-bar-btn"><i class="far fa-user fa-1x"></i></a></li>
+      {{else}}
+      <li><a href="/Login" class="nav-bar-btn"><i class="far fa-user fa-1x"></i></a></li>
+      {{/if}}
+      <!--<li><a class="nav-bar-btn disabled-option"><i class="fas fa-shopping-cart fa-1x"></i></a></li>-->
+      <li><a class="btn boton" id="btn-donative-navbar" href="/donatives">Donativos</a></li>
+    </ul>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modalSearch" class="modal">
+    <div class="row">
+      <form class="" action="/search" method="POST">
+        <div class="col l11">
+            <input type="text" name="insearch" value="" class=" input-search-modal" placeholder="Busca algo aquí">
+        </div>
+        <div class="col l1">
+          <button type="submit" class="btn boton btn-search-modal">Go!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>

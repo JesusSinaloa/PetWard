@@ -1,0 +1,88 @@
+.div-container-detail-my-adoption{
+ margin-top: 50px;
+}
+.div-container-user-my-adoption{
+  background-color: white;
+  border: 1px solid silver;
+  border-radius: 5px;
+
+}
+.div-title-my-adoption h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-container-user-my-adoption h5{
+  color: #505050;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+.div-user-my-adoption-image > img{
+  border-radius: 50%;
+  border: 1px solid #969696;
+}
+.div-user-my-adoption-nombre span{
+  color: #505050;
+  font-size: 11pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.div-user-my-adoption-correo span{
+  color: #969696;
+  font-size: 11pt;
+  letter-spacing: 1px;
+}
+.div-user-my-adoption-telefono span{
+  color: #969696;
+  font-size: 11pt;
+  letter-spacing: 1px;
+}
+.div-car-pet-my-adoption{
+  box-shadow: none !important;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin: 0 !important;
+}
+.div-car-pet-image-my-adoption{
+  text-align: center;
+  padding: 20px;
+}
+.div-car-pet-image-my-adoption img{
+  border-radius: 50%;
+  border: 2px solid purple;
+}
+.div-car-pet-nombre-my-adoption{
+ text-align: center;
+
+}
+.div-car-pet-nombre-my-adoption span{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 15pt;
+  font-weight: bold;
+
+}
+.div-car-pet-sexo-my-adoption{
+  text-align: center;
+
+}
+.div-car-pet-sexo-my-adoption .genero-revel-index-macho{
+  color: #2e76ff;
+  font-size: 30px;
+}
+.div-car-pet-sexo-my-adoption .genero-revel-index-hembra{
+  color: #fe9be9;
+  font-size: 30px;
+}
+.div-car-pet-contenido{
+  padding: 10px;
+}
+.div-car-pet-action-my-adoption{
+  text-align: center;
+}
+.div-car-pet-action-my-adoption a{
+  color: purple;
+  font-size: 11pt;
+  letter-spacing: 1px;
+}

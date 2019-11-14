@@ -1,0 +1,45 @@
+nav{
+background-color: white;
+box-shadow: none;
+
+}
+nav a img{
+  height: 60px;
+}
+.nav-bar-btn{
+  color: #8e24aa;
+  font-size: 11pt;
+
+
+}
+.nav-bar-btn i{
+ margin-right: 5px;
+}
+#btn-donative-navbar{
+  background-color: #ffef00 !important;
+  color: #8e5000 !important;
+  font-weight: bold;
+  box-shadow: none !important;
+}
+#modalSearch{
+    margin: 0;
+    width: 100%;
+    min-height: 400px;
+    padding: 10%;
+}
+.btn-search-modal{
+  box-shadow: none !important;
+  margin-top: -8px;
+
+}
+.input-search-modal{
+  border: 2px solid #969696 !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  height: 20px !important;
+  margin-right: 5px !important;
+  width: 98% !important;
+  box-shadow: none !important;
+  color: #505050;
+
+}

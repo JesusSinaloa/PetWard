@@ -1,0 +1,80 @@
+.div-header-donative-form{
+  display: flex;
+  align-items: center;
+}
+.div-header-donative-form-left h2{
+  color: #505050;
+  font-size: 35pt;
+  letter-spacing: 1px;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.div-container-form-donative{
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 453px;
+}
+.div-container-form-donative-left{
+  padding: 0 !important;
+  height: 454px;
+}
+.div-container-form-donative-left img{
+  height: 100% !important;
+}
+.div-quantity-donate div{
+  border: 1px solid #969696;
+  padding: 20px !important;
+
+  align-items: center;
+  text-align: center;
+}
+.div-quantity-donate div:hover {
+  background-color: #49affd59;
+}
+.div-other-quantity-doante{
+  margin: 0;
+}
+.div-other-quantity-doante .div-label{
+  padding: 15px;
+  color: white;
+  background-color: #49affd;
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+.div-other-quantity-doante .div-input{
+  padding: 0 !important;
+}
+.div-other-quantity-doante .div-input input{
+  border: 1px solid #49affd !important;
+  color: #505050 !important;
+  box-shadow: none !important;
+  padding: 6px;
+}
+.div-pay-donate{
+  margin-top: 30px;
+}
+.div-pay-donate h5{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 20pt;
+}
+.div-pay-donate button{
+  background-color: #49affd !important;
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  margin-right: 5px;
+
+  border: none !important;
+}
+
+.div-pay-donate i{
+  color: white;
+  font-size: 40px;
+  
+}

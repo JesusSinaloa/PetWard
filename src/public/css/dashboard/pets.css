@@ -1,0 +1,101 @@
+.card-image-pets{
+  padding: 0 !important;
+}
+.div-name-card-pets h5{
+  color: #505050;
+  letter-spacing: 2px;
+  margin-top: 0 !important;
+  margin-bottom: 5px;
+}
+.div-raza-card-pets{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.genero-revel-index-macho{
+  color: #2e76ff;
+  font-size: 20px;
+}
+.genero-revel-index-hembra{
+  color: #fe9be9;
+  font-size: 20px;
+}
+.raza-revel-pets{
+  color: #969696;
+  font-size: 9pt;
+  letter-spacing: 1px;
+
+}
+.div-descripcion-card-pets{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d7d7d7
+}
+.div-descripcion-card-pets p{
+  color: #969696;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  height: 80px;
+  font-style: italic;
+  text-align: justify;
+}
+
+.card-pets{
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #969696;
+}
+.card-pets .card-image img{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+
+}
+.div-btn-card-pets{
+
+  margin-top: 10px;
+margin-bottom: 10px;
+}
+.div-btn-card-pets .div-left a{
+  color: purple;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  text-align: left;
+}
+.div-btn-card-pets .div-right{
+  text-align: right;
+}
+.contenido-tarjeta-pets{
+  padding: 10px 20px 10px 20px !important;
+}
+.button-delete{
+  background: none !important;
+  border: none !important;
+}
+
+
+.div-containerd-type-pet{
+  margin-top: 50px;
+}
+.div-containerd-type-pet div{
+  padding: 50px;
+
+}
+.div-containerd-type-pet div > div{
+  border: 1px solid silver;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15%;
+  text-align: center
+}
+.div-containerd-type-pet .fa-heart{
+  color: #ff2e2e;
+}
+.div-containerd-type-pet .fa-paw {
+  color: #a74dc4a6;
+}
+.div-containerd-type-pet div > div > a{
+  color: #505050;
+  font-size: 15pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+}

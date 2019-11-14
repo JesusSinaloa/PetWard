@@ -1,0 +1,114 @@
+.div-yellow{
+  min-height: 600px;
+  width: 50%;
+  background-color: #ffef00 !important;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+.div-white{
+  min-height: 600px;
+  width: 50%;
+  background-color: white;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.div-title-audition h2{
+  color: #505050 !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.div-circle{
+  text-align: center;
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+    background-color: #65cb99;
+    margin: auto;
+}
+.div-circle-audition{
+  text-align: center;
+
+
+    border-radius: 50%;
+    background-color: white;
+    margin: 0;
+}
+.div-circle img{
+  width: 75%;
+
+}
+.div-circle-audition img{
+
+
+}
+.div-title h2{
+  color: #8e5000 !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.div-hueso{
+  text-align: center;
+}
+.div-hueso i{
+  font-size: 60pt;
+  color: #8e5000 !important;
+}
+.div-hueso-audition{
+  text-align: center;
+}
+.div-hueso-audition i{
+  font-size: 60pt;
+  color: #969696 !important;
+}
+.div-description-success{
+  padding: 20px;
+  text-align: center;
+}
+.div-description-success p{
+  color: #8e5000 !important;
+  font-size: 13pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.div-description-success-audition{
+  padding: 20px;
+  text-align: center;
+}
+.div-description-success-audition p{
+  color: #969696 !important;
+  font-size: 13pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.div-success-comodin{
+  height: 50px;
+  width: 100%;
+  background-color: #c086c0;
+  text-align: center;
+  padding: 3%;
+}
+.div-success-comodin span{
+color: #664061;
+letter-spacing: 1px;
+font-size: 11pt;
+font-weight: bold;
+}
+.div-success-comodin-audition{
+  height: 50px;
+  width: 100%;
+  background-color: #969696;
+  text-align: center;
+  padding: 3%;
+}
+.div-success-comodin-audition span{
+color: white;
+letter-spacing: 1px;
+font-size: 11pt;
+font-weight: bold;
+}

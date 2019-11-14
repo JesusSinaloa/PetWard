@@ -1,0 +1,37 @@
+.div-table-messages{
+padding: 10px;
+}
+
+.card-message-user{
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.card-message-title{
+  padding: 10px;
+
+}
+.card-message-title h5{
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #505050;
+}
+.card-message-title label{
+  font-size: 10pt;
+  letter-spacing: 1px;
+
+}
+.fa-trash-alt{
+  color: #ff6767;
+}
+.fa-eye{
+  color: #7fdf7f;
+}
+.table-messages thead tr th{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.table-messages tbody tr td{
+  color: #969696;
+  letter-spacing: 1px;
+}

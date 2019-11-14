@@ -1,0 +1,101 @@
+
+.card{
+
+}
+.div-body-register{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.card-content-register{
+  width: 100%;
+  height: 598px !important;
+  background-color: white;
+  border-radius: 5px !important;
+
+  background: rgba(173,45,113,1);
+  background: -moz-linear-gradient(left, rgba(173,45,113,1) 0%, rgba(128,3,237,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(173,45,113,1)), color-stop(100%, rgba(128,3,237,1)));
+  background: -webkit-linear-gradient(left, rgba(173,45,113,1) 0%, rgba(128,3,237,1) 100%);
+  background: -o-linear-gradient(left, rgba(173,45,113,1) 0%, rgba(128,3,237,1) 100%);
+  background: -ms-linear-gradient(left, rgba(173,45,113,1) 0%, rgba(128,3,237,1) 100%);
+  background: linear-gradient(to right, rgba(173,45,113,1) 0%, rgba(128,3,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad2d71', endColorstr='#8003ed', GradientType=1 );
+}
+
+.div-container-form-register{
+  padding-top: 0% !important;
+  padding-bottom: 0% !important;
+
+}
+.subdiv-form-container-register{
+  background-color: white;
+  border-radius: 5px;
+  padding: 60px;
+  height: auto;
+  margin-top: -1px;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 150px;
+
+}
+.h3-show-welcome{
+  margin: 0 !important;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 25pt;
+  padding-left: 16% !important;
+  padding-top: 25px !important;
+}
+.h3-show-welcome i{
+  padding-right: 10px;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid purple;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: purple;
+}
+.div-btn-register-form{
+  text-align: right;
+}
+.div-btn-register-form button{
+  border-radius: 25px;
+  width: 50%;
+  margin-top: 50px;
+}
+.div-btn-register-form a{
+  color: purple;
+  letter-spacing: 1px;
+  font-size: 12pt;
+  margin-top: 12px;
+}
+.h3-title-register{
+  letter-spacing: 1px;
+  color: #505050;
+  font-size: 30pt;
+}
+/*ASOCIATION*/
+.span-title-section{
+  color: #505050;
+  font-weight: bold;
+  font-size: 15pt;
+}
+.div-register-data-association{
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  padding-left: 10px !important;
+
+}
+.div-register-data-association{
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  padding-left: 10px !important;
+}
+.in-file-asociation{
+  margin-bottom: 24px;
+  margin-top: 24px;
+}

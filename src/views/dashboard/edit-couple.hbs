@@ -1,0 +1,122 @@
+<div class="row container">
+  <div class="col l12">
+    <div class="card card-data-user">
+      <form method="POST" action="/pet/update-couple/{{pet._id}}?_method=PUT">
+        <input type="hidden" name="_method" value="PUT">
+      <div class="card-content row">
+        <div class="col l12 div-title-card-data-user">
+          <span>Edita la información de tu mascota</span>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 div-title-card-data-user">
+            <span>Informacion General</span>
+          </div>
+          <div class="col l6">
+            <span>Nombre</span>
+            <input type="text" name="nombre" value="{{pet.nombre}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Edad</span>
+            <input type="text" name="edad" value="{{pet.edad}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Raza</span>
+            <input type="text" name="raza" value="{{pet.raza}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Color</span>
+            <input type="text" name="color" value="{{pet.color}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Sexo</span>
+              <select class="browser-default" name="sexo" required>
+            {{#if pet.sexo}}
+            <option value=1  selected>Macho</option>
+            {{else}}
+            <option value=0  selected>Hembra</option>
+            {{/if}}
+
+
+              <option value=1>Macho</option>
+              <option value=0>Hembra</option>
+
+            </select>
+          </div>
+          <div class="col l6 ">
+            <span>Tipo</span>
+            <select class="browser-default" name="tipo" required>
+              <option value="{{pet.tipo}}"  selected>{{pet.tipo}}</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+            </select>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Apodo</span>
+            <input type="text" name="apodo" value="{{pet.apodo}}"  class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Descripcion</span>
+            <textarea name="descripcion" rows="8" cols="80">{{pet.descripcion}}</textarea>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Imagen 1</span>
+            <input type="file" name="imagen0" value="">
+          </div>
+          <div class="col l6 ">
+            <span>Imagen 2</span>
+            <input type="file" name="imagen1" value="">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Imagen 3</span>
+            <input type="file" name="imagen2" value="">
+          </div>
+          <div class="col l6 ">
+            <span>Imagen 4</span>
+            <input type="file" name="imagen3" value="">
+          </div>
+        </div>
+
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 div-title-card-data-user">
+            <span>Ubicación</span>
+          </div>
+            <div class="col l6">
+              <span>Estado:</span>
+              <input type="text" class="input-text" name="estado" value="{{pet.ubicacion.[0].estado}}">
+            </div>
+            <div class="col l6">
+              <span>Ciudad:</span>
+              <input type="text" class="input-text" name="ciudad" value="{{pet.ubicacion.[0].ciudad}}">
+            </div>
+            <div class="col l6">
+              <span>Calle:</span>
+              <input type="text" class="input-text" name="calle" value="{{pet.ubicacion.[0].calle}}">
+            </div>
+            <div class="col l6">
+              <span>Colonia:</span>
+              <input type="text" class="input-text" name="colonia" value="{{pet.ubicacion.[0].colonia}}">
+            </div>
+            <div class="col l6">
+              <span>CP:</span>
+              <input type="text" class="input-text" name="cp" value="{{pet.ubicacion.[0].cp}}">
+            </div>
+        </div>
+
+        <div class="col l12 div-btn-accion-perfil">
+          <button class="btn boton" type="submit" >Actualizar</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

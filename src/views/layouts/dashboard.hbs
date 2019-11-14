@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <!-- LIBRERIAS EXTERNAS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/materialize/css/materialize.min.css">
+    <!--FUENTES-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/generales/navigation.css">
+    <link rel="stylesheet" href="/css/generales/footer.css">
+    <link rel="stylesheet" href="/css/generales/generales.css">
+    <link rel="stylesheet" href="/css/generales/letras.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/dashboard.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/perfil.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/messages.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/register-pet.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/detail-message.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/pets.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/pets-modal.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/donations.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/detail-donative.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/adoptions.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/my-adoptions.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/detail-my-adoption.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/auditions.css">
+    <link rel="stylesheet"  type="text/css" href="/css/dashboard/detail-audition.css">
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav" id="nav-header">
+        <div class="container-nav row">
+          <div class="col l6 left">
+            <a href="#" class="a-hide-sidenav">
+              <i class="fas fa-bars"></i>
+            </a>
+            <i class="fas fa-search"></i>
+            <input type="search" name="" value="" id="in-search">
+          </div>
+          <div class="col l5" id="div-notification">
+            <i class="far fa-bell"></i>
+            <i class="far fa-envelope"></i>
+            <a href="#" class="a-profile-down">
+              <span>{{user.nombre}}</span>
+              <i class="fas fa-angle-down"></i>
+            </a>
+          </div>
+          <div class="col l1 right" id="div-img-profile">
+            {{#if user.image}}
+            <img src="/images/perfil/{{user.image}}" alt="" id="img-profile-nav">
+            {{else}}
+            <img src="/images/profile-pic-nav.png" alt="" id="img-profile-nav">
+            {{/if}}
+          </div>
+        </div>
+      </nav>
+      <ul class="sidenav sidenav-fixed" id="ul-side-left">
+        <div class="div-logo-ul-side">
+          <img src="/images/petWardLogoDash.png" alt="">
+        </div>
+        <hr id="hr-side-left">
+        <ul class="collapsible" id="ul-actions-ul-side">
+          <li>
+            <div class="collapsible-header"><i class="fas fa-home"></i>Home</div>
+          </li>
+          <li>
+            {{#if user.role}}
+                <div class="collapsible-header" id="btn-perfil"><a href="/perfil-asociation/{{user.id}}"><i class="far fa-building"></i>Mis Datos</a></div>
+            {{else}}
+                <div class="collapsible-header" id="btn-perfil"><a href="/perfil/{{user.id}}"><i class="fas fa-user"></i>Perfil</a></div>
+            {{/if}}
+
+          </li>
+          <li>
+            <div class="collapsible-header" id="btn-registro"><a href="/register-pet"><i class="fas fa-dog"></i>Registro</a></div>
+
+          </li>
+          <li>
+            <div class="collapsible-header"><a href="/my-pets/{{user.id}}"><i class="fas fa-paw"></i>Mis mascotas</a></div>
+
+          </li>
+          <li>
+            {{#if user.role}}
+
+            {{else}}
+              <div class="collapsible-header"><a href="/register-couple"><i class="fas fa-heart"></i>Parejas</a></div>
+            {{/if}}
+          </li>
+          <li>
+            <div class="collapsible-header" id="btn-messages"><a href="/messages/{{user.id}}"><i class="fas fa-comment-dots"></i>Mensajes</a></div>
+
+          </li>
+          {{#if user.role}}
+          <li>
+            <div class="collapsible-header" id="btn-messages"><a href="/donations/{{user.id}}"><i class="fas fa-dollar-sign"></i>Donaciones</a></div>
+
+          </li>
+          {{/if}}
+          <li>
+            <div class="collapsible-header" id="btn-messages"><a href="/adoptions/{{user.id}}"><i class="fas fa-handshake"></i>Adopciones</a></div>
+          </li>
+          <li>
+            {{#if user.role}}
+
+            {{else}}
+              <div class="collapsible-header"><a href="/show-auditions/{{user.id}}"><i class="fas fa-user-check"></i>Audiciones</a></div>
+            {{/if}}
+          </li>
+        </ul>
+      </ul>
+    </header>
+    <main>
+
+      <section>
+        <div class=" col l6 offset-l3 center container" id="loader">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="" id="resultado">
+
+          {{{body}}}
+        </div>
+      </section>
+    </main>
+  <!--IMPORTANDO JQUERY-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/css/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="/js/jQuery/jquery-3.2.1.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
+  <!--SCRIPTS-->
+  <script type="text/javascript" src="/js/dashboard/dashboard.js"></script>
+  <script type="text/javascript" src="/js/dashboard/register-pet.js"></script>
+  <script type="text/javascript" src="/js/dashboard/detail-donation.js"></script>
+  <script type="text/javascript" src="/js/dashboard/my-pets.js"></script>
+  <script type="text/javascript" src="/js/dashboard/edit-pet.js"></script>
+  <script type="text/javascript" src="/js/dashboard/messages.js"></script>
+  <script type="text/javascript" src="/js/dashboard/detail-audition.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="div-match-pets-preludio row">
+    <div class="col l2">
+        <img src="/images/match/icon-match-verify.png" class="responsive-img" alt="">
+    </div>
+    <div class="col 10 div-match-pets-title">
+        <h3>Te recomendamos estas mascotas</h3>
+    </div>
+
+  </div>
+  
+
+  <div class="row">
+    {{#each pets}}
+    <div class="col l3 s12 m6">
+      <div class="tarjeta-index-pet card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator card-image" src="/images/pets/{{imagen0}}">
+        </div>
+        <div class="contenido-tarjeta card-content">
+          <div class="titulo overflow"><span>{{nombre}}</span></div>
+        </div>
+        <div class="card-reveal center">
+          <span class="card-title revel-name-index">{{nombre}}</span>
+          <label class="raza-revel-index">{{raza}}</label><br>
+          {{#if sexo}}
+          <i class="fas fa-mars genero-revel-index-macho"></i><br>
+          {{else}}
+          <i class="fas fa-venus genero-revel-index-hembra"></i><br>
+          {{/if}}
+          <a href="/detail-pet/{{_id}}" name="button" class="btn button-revel-index">Conocerlo</a>
+        </div>
+
+      </div>
+    </div>
+  {{/each}}
+  </div>
+</div>

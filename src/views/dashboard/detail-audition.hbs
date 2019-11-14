@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row div-container-detail-audition">
+    <div class="col l8">
+      <div class="div-container-left-audition">
+        <div class="div-title-left-audition">
+          <h3>Resumen</h3>
+        </div>
+        <div class="div-date-left-audition">
+          <label>{{audition.dateCreated}}</label>
+        </div>
+        <div class="div-container-data-left-audition">
+          <h4>Datos</h4>
+          <div class="div-data-peticion-left-audition">
+            <h6>Peticion</h6>
+            <span>{{userPay.nombre}}</span><br>
+            <span>{{userPay.email}}</span>
+          </div>
+          <div class="div-data-to-left-audition">
+            <h6>Para</h6>
+            <span>{{userTo.nombre}}</span><br>
+            <span>{{userTo.email}}</span>
+          </div>
+        </div>
+        <div class="div-status-left-audition">
+          <input type="hidden" name="" value="{{audition.status}}" id="in-status-audition">
+          <div class="" id="div-status-audition-proccess">
+            <span>Tu solicitud aun esta en proceso</span>
+          </div>
+          <div class="" id="div-status-audition-success">
+            <div class="">
+              <p>vjdfkvjbfgkvjbfkjfgkbjfgkjfgkbjgfjbgfjbfg
+              bfgbkjfgnbkjgfnbkgfjnbkjfgbgf
+              bfglkbnfglbnfglknbfglknblgfkbfg
+              bmgkbnfglkbngflkbntl</p>
+            </div>
+            <a href="#">Imprimir documento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 ">
+      <div class="div-container-right-audition">
+        <div class="div-pay-detail">
+          <div class="div-pay-detail-i">
+            <i class="fas fa-dollar-sign fa-2x"></i>
+          </div>
+          <div class="div-pay-detail-data">
+            <span>{{audition.state}}</span><br>
+            <span>{{audition.transaction.[0].total}} {{audition.transaction.[0].currency}}</span><br>
+            <span>{{audition.payer.[0].email}}</span><br>
+            <span id="span-id-pay-audition">{{audition.id}}</span><br>
+            </div>
+        </div>
+        <div class="div-detail-pet">
+          <div class="div-detail-pet-img">
+            <img src="/images/pets/{{pet.imagen0}}" alt="" class="responsive-img">
+          </div>
+          <div class="div-detail-pet-data">
+            <span>{{pet.nombre}}</span><br>
+          </div>
+          <div class="div-car-pet-sexo-my-adoption">
+            {{#if pet.sexo}}
+            <i class="fas fa-mars genero-revel-index-macho"></i>
+            {{else}}
+            <i class="fas fa-venus genero-revel-index-hembra"></i>
+            {{/if}}
+          </div>
+          <div class="div-detail-pet-action">
+            <a href="#"0>Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.div-table-donations{
+  margin-top: 50px;
+}
+.table-donations{
+  background-color: white;
+  border: 1px solid #969696;
+}
+.table-donations thead tr th{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.table-donations tbody tr td{
+  color: #969696;
+  letter-spacing: 1px;
+}

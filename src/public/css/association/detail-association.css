@@ -1,0 +1,237 @@
+.div-left-description-association{
+  background-color: purple;
+  min-height: 500px !important;
+
+}
+.div-right-image-association{
+  height: 500px;
+  background-color: #333333;
+  padding: 0 !important;
+}
+.div-right-image-association img{
+  width: 100%;
+  height: 100%;
+}
+.div-card-association-info{
+  margin-top: 50px;
+  background-color: #333333;
+}
+.div-logo-association{
+  text-align: center;
+}
+.div-logo-association img{
+  width: 100px;
+  height: auto;
+}
+.div-title-association{
+  text-align: center;
+}
+.div-title-association h3{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 18pt;
+  margin: 0;
+}
+.div-container-circles{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 25px;
+}
+.div-container-circles div{
+  border: 2px dashed white;
+  height: 96px;
+  border-radius: 50%;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+.div-circle-adoption{
+  padding-top: 4% !important;
+}
+.div-circle-adoption span{
+  color: white;
+  font-size: 20pt;
+  letter-spacing: 1px;
+}
+.div-circle-adoption label{
+  color: white;
+  font-size: 8pt;
+  letter-spacing: 1px;
+}
+.div-circle-donation{
+  padding-top: 4% !important;
+}
+.div-circle-donation span{
+  color: white;
+  font-size: 20pt;
+  letter-spacing: 1px;
+}
+.div-circle-donation label{
+  color: white;
+  font-size: 8pt;
+  letter-spacing: 1px;
+}
+.div-circle-rescue{
+  padding-top: 4% !important;
+}
+.div-circle-rescue span{
+  color: white;
+  font-size: 20pt;
+  letter-spacing: 1px;
+}
+.div-circle-rescue label{
+  color: white;
+  font-size: 8pt;
+  letter-spacing: 1px;
+}
+.div-circle-certifications{
+  padding-top: 4% !important;
+}
+.div-circle-certifications span{
+  color: white;
+  font-size: 20pt;
+  letter-spacing: 1px;
+}
+.div-circle-certifications label{
+  color: white;
+  font-size: 6pt;
+  letter-spacing: 1px;
+}
+.div-description-association{
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.div-description-association p{
+  color: white;
+  font-size: 9pt;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.div-social-media-association{
+  margin-top: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff7a;
+  padding-bottom: 5px;
+}
+.div-social-media-association div i{
+  color: white;
+  font-size: 35px;
+}
+.div-media-association{
+  height: 1000px;
+  background-color: white;
+  padding-top: 10px !important;
+  margin:0;
+}
+.title-media-image-association{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 30pt;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title-media-video-association{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 30pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.div-footer-association-media{
+  margin-bottom: 10px;
+}
+.div-footer-association-media i{
+  color:white;
+  font-size: 40pt;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*HOVER IMG*/
+/*.hover01{
+  margin-bottom: 10px;
+  padding: 0 !important;
+}
+.hover01 figure img{
+
+}
+.column {
+
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+
+figure {
+
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}*/
+
+
+
+/* Zoom In #1 */
+.hover01{
+
+  padding: 0 !important;
+}
+figure {
+	margin:-5px;
+	padding: 0;
+}
+.hover01 figure img {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+  box-shadow: -1px 2px 3px black;
+}
+
+.a-send-to-donative {
+    background-color: #ffef00 !important;
+    color: #8e5000 !important;
+    font-weight: bold;
+    box-shadow: none !important;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 12pt;
+}
+.a-send-to-pets{
+  background-color: white!important;
+  color: #505050 !important;
+  font-weight: bold;
+  box-shadow: none !important;
+  width: 80%;
+
+  border-radius: 20px;
+  font-size: 12pt;
+}
+.div-btn-action-association{
+  margin: 0 !important;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Parejas</title>
+    <!-- LIBRERIAS EXTERNAS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/materialize/css/materialize.min.css">
+    <!--FUENTES-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--CSS-->
+
+    <link rel="stylesheet" href="/css/generales/navigation.css">
+    <link rel="stylesheet" href="/css/generales/footer.css">
+    <link rel="stylesheet" href="/css/generales/generales.css">
+    <link rel="stylesheet" href="/css/generales/letras.css">
+    <link rel="stylesheet" href="/css/parejas/parejas.css">
+
+
+  </head>
+  <body>
+    <header>
+      {{> navigation}}
+    </header>
+    <main>
+      <section>
+        <div class="container" id="layer">
+          <img src="/images/ei.jpg" alt="">
+        </div>
+      </section>
+      <section>
+        <div class="container center" id="div-icon-flame">
+          <i class="fas fa-fire-alt fa-6x"></i>
+        </div>
+      </section>
+      <section>
+        <div class="container div-filter">
+          <a href="/return-couples" id="return-couple">
+            <i class="fas fa-th-large fa-1x"></i>
+          </a>
+          <i class="fas fa-sort-amount-down fa-1x"></i>
+        </div>
+      </section>
+      <section>
+        <div class=" col l6 offset-l3 center container" id="loader">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container" id="resultado">
+          {{> messages}}
+          {{> errors}}
+          {{{body}}}
+        </div>
+      </section>
+    </main>
+    <div class="" id="waves">
+
+    </div>
+    <footer class="page-footer">
+      {{> footer}}
+    </footer>
+  <!--IMPORTANDO JQUERY-->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="/css/materialize/js/materialize.min.js"></script>
+   <script type="text/javascript" src="/js/jQuery/jquery-3.2.1.min.js"></script>
+
+   <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
+  <!--SCRIPTS-->
+
+  <script type="text/javascript" src="/js/parejas/parejas.js"></script>
+  <script type="text/javascript" src="/js/detail-pet/detail-pet.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<div class="container">
+  <div class="row">
+  {{#each pets}}
+  <div class="col l12 s12 m12">
+    <div class="card card-pets row">
+      <div class="card-image waves-effect waves-block waves-light col l3 card-image-pets">
+        <img class="activator card-image" src="/images/pets/{{imagen0}}">
+      </div>
+      <div class="card-content contenido-tarjeta-pets col l9">
+        <div class="div-name-card-pets overflow">
+          <h5>{{nombre}}</h5>
+        </div>
+        <div class="div-raza-card-pets">
+          {{#if sexo}}
+          <i class="fas fa-mars genero-revel-index-macho"></i>
+          {{else}}
+          <i class="fas fa-venus genero-revel-index-hembra"></i>
+          {{/if}}
+          <label class="raza-revel-pets">{{raza}}</label><br>
+
+        </div>
+        <div class="div-descripcion-card-pets">
+          <p>{{descripcion}}</p>
+        </div>
+        <div class="div-btn-card-pets row">
+          <div class="col l6 div-left">
+            <a class="modal-trigger" href="#modal{{_id}}">Mostrar mas información</a>
+          </div>
+          <div class="col l6 div-right">
+              <form action="/delete-pet/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+              <button class="button-delete"><i class="far fa-trash-alt btn-eliminar"></i></button>
+              <a href="/edit-pet/{{_id}}"><i class="far fa-edit"></i></a>
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Structure -->
+ <div id="modal{{_id}}" class="modal">
+   <div class="modal-content">
+     <div class="row">
+       <div class="col l3 modal-content-left">
+         <div class="row div-modal-icons">
+           <div class="col l8">
+             <i class="fas fa-long-arrow-alt-left modal-close"></i>
+           </div>
+           <div class="col l2">
+             <i class="fas fa-star"></i>
+           </div>
+           <div class="col l2">
+             <i class="fas fa-sync-alt"></i>
+           </div>
+         </div>
+         <div class="div-image-pets-modal">
+           <img src="/images/pets/{{imagen0}}" alt="imagen" class="responsive-img">
+           <div class="subdiv-image-pets-modal row">
+             <div class="col l3">
+               <img src="/images/pets/{{imagen0}}" alt="imagen" class="responsive-img">
+             </div>
+             <div class="col l3">
+               <img src="/images/pets/{{imagen1}}" alt="imagen" class="responsive-img">
+             </div>
+             <div class="col l3">
+               <img src="/images/pets/{{imagen2}}" alt="imagen" class="responsive-img">
+             </div>
+             <div class="col l3">
+               <img src="/images/pets/{{imagen3}}" alt="imagen" class="responsive-img">
+             </div>
+
+           </div>
+         </div>
+         <div class="div-name-pets-modal center">
+           <span>{{nombre}}</span>
+         </div>
+       </div>
+       <div class="col l9 modal-content-right">
+         <div class="div-info">
+           <h3>Información General</h3>
+           <div class="">
+             <span>Nombre: {{nombre}}</span>
+             {{#if sexo}}
+              <i class="fas fa-mars genero-revel-index-macho-modal"></i>
+              {{else}}
+              <i class="fas fa-venus genero-revel-index-hembra-modal"></i>
+             {{/if}}
+           </div>
+
+           <div class="">
+             <span>Tipo: {{tipo}}</span>
+           </div>
+           <div class="">
+             <span>Edad: {{edad}}</span>
+           </div>
+           <div class="">
+             <span>Raza: {{raza}}</span>
+           </div>
+           <div class="">
+             <span>Color: {{color}}</span>
+           </div>
+           <div class="">
+             <p>{{descripcion}}</p>
+           </div>
+         </div>
+         <div class="div-adopted">
+           <h3>Estatus de adopción</h3>
+           <div class="">
+             {{#if adopted.isAdopted}}
+              <span>Tu mascota fue adoptada</span><br>
+              <label>Por: {{adopted.byWhat}}</label><br>
+              <label>Fecha: {{adopted.date}}</label>
+             {{else}}
+              <strong>Tu mascota aun no ha sido adoptada</strong>
+             {{/if}}
+           </div>
+         </div>
+         <div class="div-salud">
+           <h3>Estado de salud</h3>
+           <div class="">
+             <span>Presenta anemia: {{salud.[0].anemia}}</span><br>
+             <span>Presenta problemas respiratorios: {{salud.[0].respiratorio}}</span><br>
+             <span>Presenta fracturas: {{salud.[0].fracturas}}</span><br>
+             <span>Presenta lesiones: {{salud.[0].lesiones}}</span><br>
+             <span>Esta esterilizado: {{salud.[0].esterilizado}}</span><br>
+             <span>Presenta problemas en las vias urinarias: {{salud.[0].urinarios}}</span><br>
+             <span>Sufre de alergias: {{salud.[0].alergias}}</span><br>
+             <span>Tiene diabetes: {{salud.[0].diabetes}}</span><br>
+             <span>Presenta probelmas en los ojos: {{salud.[0].oculares}}</span><br>
+             <span>Tiene problemas con la voz: {{salud.[0].voz}}</span><br>
+             <span>Tiene problemas en los oidos: {{salud.[0].oido}}</span><br>
+             <span>Tiene problemas dentales: {{salud.[0].dental}}</span><br>
+             <span>Tiene garrapatas: {{salud.[0].garrapatas}}</span><br>
+             <span>Tiene pulgas: {{salud.[0].pulgas}}</span><br>
+             <span>Tiene sarna: {{salud.[0].sarna}}</span><br>
+             <span>Otros problemas: {{salud.[0].otros}}</span><br>
+
+           </div>
+         </div>
+         <div class="div-vacunas">
+           <h3>Vacunas</h3>
+           <input type="hidden" id="in-type-vacuna" value="{{tipo}}">
+           <div id="div-vacunas-perro">
+             {{#if vacunas.[0].vacuna1}}
+             <div class="">
+               <h5>Primovacunación ó Puppy</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 6 semanas</li>
+                 <li class="vacuna-service">Sirve para: Moquillo y Parvovirus</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna2}}
+             <div class="">
+               <h5>Polivalente ó Multiple</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 8 semanas</li>
+                 <li class="vacuna-service">Sirve para: Hepatitis y Leptospirosis</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna3}}
+             <div class="">
+               <h5>Refuerzo de polivalente</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 12 semanas</li>
+                 <li class="vacuna-service">Sirve para: Hepatitis y Leptospirosis</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna4}}
+             <div class="">
+               <h5>Antirrabica</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 16 semanas</li>
+                 <li class="vacuna-service">Sirve para: Rabia</li>
+               </ul>
+             </div>
+           {{/if}}
+           {{#if vacunas.[0].vacuna5}}
+             <div class="">
+               <h5>Vacunas anual</h5>
+               <ul>
+
+                 <li class="vacuna-time">Aplicación: Anual</li>
+                 <li class="vacuna-service">Sirve para: Polivalente y rabia</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna6}}
+             <div class="">
+               <h5>Desparacitación</h5>
+               <ul>
+
+                 <li class="vacuna-time">Aplicación: 3 meses</li>
+                 <li class="vacuna-service">Sirve para: Paracitos</li>
+               </ul>
+             </div>
+             {{/if}}
+           </div>
+           <div id="div-vacunas-gato">
+             {{#if vacunas.[0].vacuna1}}
+             <div class="">
+               <h5>Leucemia Felina</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 6 semanas</li>
+                 <li class="vacuna-service">Sirve para: Prevención Leucemia Felina</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna2}}
+             <div class="">
+               <h5>Trivalente</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 2 meses</li>
+                 <li class="vacuna-service">Sirve para: Rinotranquitis, Calcivirosis</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna3}}
+             <div class="">
+               <h5>Refuerzo Trivalente</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 3 meses</li>
+                 <li class="vacuna-service">Sirve para: Rinotranquitis, Calcivirosis</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna4}}
+             <div class="">
+               <h5>Rabia</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 4-6 meses</li>
+                 <li class="vacuna-service">Sirve para: Rabia</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna5}}
+             <div class="">
+               <h5>Vacunas anuales</h5>
+               <ul>
+
+                 <li class="vacuna-time">Aplicación: Anualmente</li>
+                 <li class="vacuna-service">Sirve para: Trivalente, Rabia</li>
+               </ul>
+             </div>
+             {{/if}}
+             {{#if vacunas.[0].vacuna6}}
+             <div class="">
+               <h5>Desparacitación</h5>
+               <ul>
+                 <li class="vacuna-time">Aplicación: 3 meses</li>
+                 <li class="vacuna-service">Sirve para: Paracitos</li>
+               </ul>
+             </div>
+             {{/if}}
+           </div>
+         </div>
+         <div class="div-ubicacion">
+           <h3>Ubicación</h3>
+           <div class="">
+             <span>Estado: {{ubicacion.[0].estado}}</span>
+           </div>
+           <div class="">
+             <span>Ciudad: {{ubicacion.[0].ciudad}}</span>
+           </div>
+           <div class="">
+             <span>Calle: {{ubicacion.[0].calle}}</span>
+           </div>
+           <div class="">
+             <span>Colonia: {{ubicacion.[0].colonia}}</span>
+           </div>
+           <div class="">
+             <span>CP: {{ubicacion.[0].calle}}</span>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+ </div>
+ <!-- Modal fin -->
+
+  {{/each}}
+    </div>
+</div>

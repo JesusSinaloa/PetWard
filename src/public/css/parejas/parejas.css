@@ -1,0 +1,189 @@
+/*TARJETA*/
+
+ .card{
+  border-radius: 5px ;
+  height: auto;
+  width: auto;
+}
+.titulo {
+  font-size: 11pt !important;
+  font-weight: bold;
+}
+
+.contenido-tarjeta div{
+  white-space: nowrap;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+
+}
+
+
+.card-image{
+  width: 100%;
+  height: auto;
+}
+.hr-card{
+  border: 0;
+ height: 1px;
+ background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+ background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+ background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+ background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+.contenido-tarjeta{
+  padding: 8px !important;
+}
+.contenido-tarjeta div{
+  width: 100%;
+}
+
+/*FIN TARJETA*/
+.icon-heart{
+  color: #ef5555;
+}
+.icon-globe{
+  color: #6aff76;
+}
+.fa-comment:hover{
+
+    color:#26bb32 !important;
+}
+.fa-heart:hover{
+    color:#ff3131 !important;
+}
+.div-name{
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.div-name{
+
+  margin-bottom: 10px;
+}
+.div-name{
+  color: #505050
+}
+.div-loczation{
+
+  margin-bottom: 10px;
+}
+.div-loczation i{
+  color: #969696
+}
+.div-loczation span{
+  color: #969696
+}
+.div-btn{
+
+  margin-bottom: 10px;
+}
+#layer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /*background-color: red;*/
+  margin-bottom: 50px;
+
+}
+#layer img{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#div-icon-flame{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#div-icon-flame i{
+color: #ff4d4d;
+}
+.pagination li.active a{
+background-color:  #ab47bc !important;
+}
+.div-filter i{
+  color: silver;
+  margin-right: 8px;
+  margin-left: 10px;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+/*modal*/
+.card-modal{
+  border-radius: 10px;
+}
+.image-pet-modal{
+  text-align: center;
+  padding: 10px;
+}
+.card-image-modal{
+  border-radius: 50%;
+  border: 10px solid #c22cc2;
+  width: 200px;
+  height: 200px;
+}
+.name-pet-modal{
+  padding: 10px;
+  text-align: center;
+}
+.name-pet-modal h5{
+  color: #c22cc2;
+  font-size: 30pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.name-pet-modal label{
+  font-size: 10pt;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.description-pet-modal{
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+.description-pet-modal p{
+text-align: justify;
+font-size: 12pt;
+letter-spacing: 1px;
+color: silver;
+}
+#loader{
+  display: none;
+
+  height: 350px;
+  padding-top: 100px;
+}
+.div-star{
+  padding: 30px;
+  text-align: center;
+}
+
+.div-star i{
+  color: #ffc300;
+}
+.div-btn-message{
+  padding: 30px;
+  text-align: center;
+}
+.div-btn-message i{
+  color: #9c27b0;
+}
+.form-send-message{
+  text-align: center;
+}
+.form-send-message h4{
+  color: #505050;
+  letter-spacing: 1px;
+
+}
+.form-send-message textarea{
+  min-height: 200px;
+  width: 100%;
+  padding: 15px;
+}
+.form-send-message button{
+  width: 80%;
+}

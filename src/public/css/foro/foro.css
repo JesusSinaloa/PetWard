@@ -1,0 +1,218 @@
+.card-room-chat{
+  border-radius: 10px;
+}
+#div-users{
+background-color: #263238;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.user-room-image{
+    border-radius: 50%;
+    border: 5px solid #78909c;
+    width: 70px;
+    height: auto;
+}
+.chat-room-image{
+  border-radius: 50%;
+  border: 5px solid #4caf50;
+  width: 90px;
+  height: auto;
+}
+.div-data-user{
+  margin-top: 10px;
+}
+.div-data-user span{
+  font-size: 10pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+}
+.div-data-user label{
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.div-data-user label i{
+  margin-right: 2px;
+  color: #4caf50;
+}
+.container-users{
+  margin-top: 50px;
+}
+.data-user-header span{
+  font-size: 20pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: silver;
+  font-style: italic;
+}
+.data-user-header label{
+  letter-spacing: 1px;
+  font-size: 15pt;
+  font-weight: bold;
+  font-style: italic;
+}
+.card-room-chat{
+  background-color: #f2f5f8;
+}
+.header-chat{
+  margin-top: 5px;
+}
+.hr-card{
+  border: 0;
+ height: 1px;
+ background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+ background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+ background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+ background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+.body-chat{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 640px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.div-text-area{
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.div-text-area textarea{
+  background: white;
+  border: 1px solid silver;
+  border-radius: 5px;
+  height: 89px;
+  padding: 10px;
+  box-shadow: none;
+  letter-spacing: 1px;
+  color: #818181;
+}
+.div-submit{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.div-files{
+  text-align: left;
+}
+.div-files i{
+color: #959595;
+font-size: 20px;
+margin-right: 2px;
+margin-left: 2px;
+margin-top: 5px;
+}
+.div-send{
+  text-align: right;
+}
+.div-send label{
+  text-transform: uppercase;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #b1caff;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+.container-globe-left{
+  text-align: left;
+  margin-top: 30px;
+}
+.globe-chat-left{
+  width: 70%;
+  height: 90px;
+  background-color: #aed581 ;
+  border-radius: 10px;
+  border: 1px solid #9ccc65;
+  position: relative;
+  float: left;
+  padding: 10px;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: white;
+  text-align: justify;
+
+}
+.globe-chat-left:after{
+   content:"";
+   position:absolute;
+   left: -10px;
+   top: -1px;
+   border-right:13px solid transparent;
+   border-left:13px solid transparent;
+   border-top:13px solid #aed581;
+}
+.container-globe-right{
+  text-align: right;
+  margin-top: 30px;
+}
+.globe-chat-right{
+  width: 70%;
+  height: 160px;
+  background-color: #81d4fa ;
+  border-radius: 10px;
+  border: 1px solid #81d4fa;
+  position: relative;
+  float: right;
+  padding: 10px;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: white;
+  text-align: justify;
+
+}
+.globe-chat-right:after{
+   content:"";
+   position:absolute;
+   right: -13px;
+   top: -1px;
+   border-right:13px solid transparent;
+   border-left:13px solid transparent;
+   border-top:13px solid  #81d4fa;
+}
+.div-remitent i{
+  color: #4caf50;
+}
+.div-remitent span{
+  color: #a8a8a8;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.user-title{
+  text-align: center;
+  margin-top: 10px;
+}
+.user-title span{
+  font-size: 17pt;
+    color: silver;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+#div-title-discuss{
+  background-color: #ffff45;
+  height: 250px;
+  padding-top: 3%;
+
+}
+#div-title-discuss h3{
+  letter-spacing: 2px;
+  font-weight: normal;
+
+  border-radius: 5px;
+}
+#div-title-discuss h5{
+  letter-spacing: 1px;
+
+  border-radius: 3px;
+  font-style: italic;
+}
+.icon-paw{
+  color: silver;
+  margin-top: 30px;
+}
+#section-waves{
+
+}

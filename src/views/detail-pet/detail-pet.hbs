@@ -1,0 +1,409 @@
+<section>
+  <div class="row container div-container-header-pet">
+    <div class="">
+      <div class="col l5 div-left-container-header-pet">
+        <div class="div-images">
+          <div class="principal-image-container">
+            <img src="/images/pets/{{pets.imagen0}}" alt="" id="img-principal">
+          </div>
+          <div class="sub-images-container row">
+            <div class="col l3">
+              <img src="/images/pets/{{pets.imagen0}}" alt="">
+            </div>
+            <div class="col l3">
+              <img src="/images/pets/{{pets.imagen1}}" alt="">
+            </div>
+            <div class="col l3">
+              <img src="/images/pets/{{pets.imagen2}}" alt="">
+            </div>
+            <div class="col l3">
+              <img src="/images/pets/{{pets.imagen3}}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col l7 div-right-container-header-pet">
+        <div class="div-name">
+          <h3>Hola soy {{pets.nombre}}!</h3>
+        </div>
+        <div class="div-pre-spec">
+          <br>
+          <label >Raza: {{pets.raza}}</label><br>
+          <label >Edad: {{pets.edad}}</label><br>
+          <label >Color: {{pets.color}}</label><br><br>
+          {{#if dataAscociation}}
+            <span class="span-pertenece-aso">Esta mascota pertenece a una asociación llamada: <a href="/detail-asociacion/{{dataAscociation.[0]._id}}">{{dataAscociation.[0].nombre}}</a></span>
+          {{/if}}
+
+        </div>
+        <div class="certificate">
+          <br>
+          <img src="/images/certificate.png" alt="">
+        </div>
+        <div class="div-action">
+          {{#if user}}
+          <a  class="btn waves-effect boton disabled-option" href="/send-message/to-adopt/{{pets._id}}/{{user.id}}" name="button">Adoptame</a>
+          {{else}}
+          <span class="btn-not-login">Debes iniciar sesión para poder adoptar</span>
+
+          {{/if}}
+        </div>
+        <div class="div-description">
+          <p>{{pets.descripcion}}</p>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="row container div-container-detail-pet">
+    <div class="col l7 div-left-detail-pet">
+      <div class="div-name-detail">
+        <h1>{{pets.nombre}}</h1>
+        <span>{{pets.ubicacion.[0].estado}}, {{pets.ubicacion.[0].ciudad}}</span>
+      </div>
+      <div class="div-sex">
+        {{#if pets.sexo}}
+        <i class="fas fa-mars genero-revel-index-macho"></i>
+        {{else}}
+        <i class="fas fa-venus genero-revel-index-hembra"></i>
+        {{/if}}
+        <span>{{pets.raza}}</span>
+      </div>
+      <div class="div-about">
+        <div class="div-vacunas">
+          <h4>Vacunas</h4>
+          <input type="hidden" id="in-type-vacuna" value="{{pets.tipo}}">
+          <div id="div-vacunas-perro">
+            {{#if pets.vacunas.[0].vacuna1}}
+            <div class="">
+              <h5>Primovacunación ó Puppy</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 6 semanas</li>
+                <li class="vacuna-service">Sirve para: Moquillo y Parvovirus</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna2}}
+            <div class="">
+              <h5>Polivalente ó Multiple</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 8 semanas</li>
+                <li class="vacuna-service">Sirve para: Hepatitis y Leptospirosis</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna3}}
+            <div class="">
+              <h5>Refuerzo de polivalente</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 12 semanas</li>
+                <li class="vacuna-service">Sirve para: Hepatitis y Leptospirosis</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna4}}
+            <div class="">
+              <h5>Antirrabica</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 16 semanas</li>
+                <li class="vacuna-service">Sirve para: Rabia</li>
+              </ul>
+            </div>
+          {{/if}}
+          {{#if pets.vacunas.[0].vacuna5}}
+            <div class="">
+              <h5>Vacunas anual</h5>
+              <ul>
+
+                <li class="vacuna-time">Aplicación: Anual</li>
+                <li class="vacuna-service">Sirve para: Polivalente y rabia</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna6}}
+            <div class="">
+              <h5>Desparacitación</h5>
+              <ul>
+
+                <li class="vacuna-time">Aplicación: 3 meses</li>
+                <li class="vacuna-service">Sirve para: Paracitos</li>
+              </ul>
+            </div>
+            {{/if}}
+          </div>
+          <div id="div-vacunas-gato">
+            {{#if pets.vacunas.[0].vacuna1}}
+            <div class="">
+              <h5>Leucemia Felina</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 6 semanas</li>
+                <li class="vacuna-service">Sirve para: Prevención Leucemia Felina</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna2}}
+            <div class="">
+              <h5>Trivalente</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 2 meses</li>
+                <li class="vacuna-service">Sirve para: Rinotranquitis, Calcivirosis</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna3}}
+            <div class="">
+              <h5>Refuerzo Trivalente</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 3 meses</li>
+                <li class="vacuna-service">Sirve para: Rinotranquitis, Calcivirosis</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna4}}
+            <div class="">
+              <h5>Rabia</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 4-6 meses</li>
+                <li class="vacuna-service">Sirve para: Rabia</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna5}}
+            <div class="">
+              <h5>Vacunas anuales</h5>
+              <ul>
+
+                <li class="vacuna-time">Aplicación: Anualmente</li>
+                <li class="vacuna-service">Sirve para: Trivalente, Rabia</li>
+              </ul>
+            </div>
+            {{/if}}
+            {{#if pets.vacunas.[0].vacuna6}}
+            <div class="">
+              <h5>Desparacitación</h5>
+              <ul>
+                <li class="vacuna-time">Aplicación: 3 meses</li>
+                <li class="vacuna-service">Sirve para: Paracitos</li>
+              </ul>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+        <div class="div-health">
+          <h4>Salud</h4>
+          <ul>
+            <li>Presenta anemia: {{pets.salud.[0].anemia}}</li>
+            <li>Presenta problemas respiratorios: {{pets.salud.[0].respiratorio}}</li>
+            <li>Presenta fracturas: {{pets.salud.[0].fracturas}}</li>
+            <li>Presenta lesiones: {{pets.salud.[0].lesiones}}</li>
+            <li>Esta esterilizado: {{pets.salud.[0].esterilizado}}</li>
+            <li>Presenta problemas en las vias urinarias: {{pets.salud.[0].urinarios}}</li>
+            <li>Sufre de alergias: {{pets.salud.[0].alergias}}</li>
+            <li>Tiene diabetes: {{pets.salud.[0].diabetes}}</li>
+            <li>Presenta probelmas en los ojos: {{pets.salud.[0].oculares}}</li>
+            <li>Tiene problemas con la voz: {{pets.salud.[0].voz}}</li>
+            <li>Tiene problemas en los oidos: {{pets.salud.[0].oido}}</li>
+            <li>Tiene problemas dentales: {{pets.salud.[0].dental}}</li>
+            <li>Tiene garrapatas: {{pets.salud.[0].garrapatas}}</li>
+            <li>Tiene pulgas: {{pets.salud.[0].pulgas}}</li>
+            <li>Tiene sarna: {{pets.salud.[0].sarna}}</li>
+            <li>Otros problemas: {{pets.salud.[0].otros}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="div-meet">
+        <h3>Conoce a {{pets.nombre}}</h3>
+        <p>{{pets.descripcion}}</p>
+      </div>
+    </div>
+    <div class="col l5 row div-right-detail-pet">
+      <div class="col l12 row div-ask-for-pet">
+        <div class="col l12 div-btn-ask">
+          <a href="#" class="btn">Saber acerde de mi</a>
+        </div>
+        <div class="col l12 div-btn-patrocinar">
+          <a href="#" class="btn">Patrocinar</a>
+        </div>
+        <div class="col l12 div-options-ask-for-pets">
+          <div class="col l6 div-options-ask-for-pets-left">
+            <i class="fas fa-share"></i>
+            <span>Compartir</span>
+          </div>
+          <div class="col l6 div-options-ask-for-pets-right">
+            <i class="fas fa-print"></i>
+            <span>Imprimir</span>
+          </div>
+        </div>
+      </div>
+      <div class="col l12 row div-contact-pet">
+        <div class="col l12 center div-presentation-location">
+          <div class="col l12 div-img-contact-pet">
+            <img src="/images/detail-pet/home.png" alt="">
+          </div>
+          <div class="col l12 div-presentation-address">
+            <h2>La casa de {{pets.nombre}} esta en</h2>
+            <label>{{pets.ubicacion.[0].estado}}, {{pets.ubicacion.[0].ciudad}}</label>
+          </div>
+        </div>
+        {{#if user}}
+        <div class="col l12 div-map-location-pet">
+
+        </div>
+
+        <div class="col l12 row div-address-contact-pet">
+          <div class="col l12 row subdiv-address-contact">
+            <div class="col l1 icon-address">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="col l11 detail-address">
+
+              <span>{{pets.ubicacion.[0].calle}}, {{pets.ubicacion.[0].cp}}</span><br>
+              <span>{{pets.ubicacion.[0].colonia}}</span><br>
+              <span>{{pets.ubicacion.[0].estado}}, {{pets.ubicacion.[0].ciudad}}</span>
+
+            </div>
+          </div>
+          <div class=" col l12 row subdiv-email-contact">
+            <div class="col l1 icon-email">
+              <i class="fas fa-envelope-open"></i>
+            </div>
+            <div class="col l11 detail-email">
+
+              <span>{{dataUser.email}}</span>
+
+            </div>
+          </div>
+          <div class="col l12 row subdiv-phone-contact">
+            <div class="col l1 icon-phone">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="col l11 detail-phone">
+
+              <span>{{dataUser.telefono}}</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col l12 div-btn-more-details">
+          <a href="#" class="btn">Saber mas</a>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-ask-for-pet">
+  <div class="div-header-ask-for-pet row">
+    <div class="container">
+    <div class="col l3 center div-header-ask-for-pet-left">
+      <img src="/images/card_image.jpg" alt="">
+    </div>
+    <div class="col l9 div-header-ask-for-pet-right">
+      <div class="title-ask-for">
+        <h3>Pregunta acerca de {{pets.nombre}}</h3>
+      </div>
+      <div class="head-ask-location">
+        <span>{{pets.ubicacion.[0].estado}}, {{pets.ubicacion.[0].ciudad}}</span>
+      </div>
+      <div class="head-ask-sex">
+        {{#if pets.sexo}}
+        <i class="fas fa-mars genero-revel-index-macho"></i>
+        {{else}}
+        <i class="fas fa-venus genero-revel-index-hembra"></i>
+        {{/if}}
+        <span>{{pets.raza}}</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="div-foo-ask-for-pet">
+    <div class="container row ">
+      <div class="col l12 div-sing-in-form-ask">
+        <span>¿Tines una cuenta?</span><a href="#">Sing In</a>
+      </div>
+      <div class="col l12 row div-invited-form-ask">
+        <div class="col l6">
+          <div class=" col l12 div-title-invited-form-ask">
+            <span>O consulta como invitado</span>
+          </div>
+          <div class="col l12 row">
+            <div class="col l6">
+              <input type="text" name="" class="input-text"  placeholder="Nombre" value="">
+            </div>
+            <div class="col l6">
+                <input type="text" name="" class="input-text" value="" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="col l12 row">
+            <div class="col l6">
+              <input type="text" name="" class="input-text" value="" placeholder="Email">
+            </div>
+            <div class="col l6">
+                <input type="text" name="" class="input-text" value="" placeholder="Telefono">
+            </div>
+          </div>
+          <div class="col l12 row">
+            <div class="col l6">
+              <input type="text" name="" class="input-text" value="" placeholder="Direccion">
+            </div>
+            <div class="col l6">
+                <input type="text" name="" class="input-text" value="" placeholder="CP">
+            </div>
+          </div>
+          <div class="col l12 row">
+            <div class="col l1">
+              <p>
+                <label>
+                  <input class="with-gap" name="group1" type="radio"  />
+                  <span></span>
+                </label>
+              </p>
+            </div>
+            <div class="col l11 div-p-receive-notification">
+              <p>
+                Me gustaría recibir comunicaciones de PetWard,
+                operada por la Compañía PetCare de Nestlé Purina,
+                incluyendo información sobre la adopción de los
+                animales domésticos y su cuidado, materiales promocionales
+                y más. Usted puede retirar su consentimiento en cualquier
+                 momento. Por favor refiérase a nuestras <a>Políticas de
+                 Privacidad</a> o <a>Contáctenos</a> en nuestra página Purina.com
+                  para más información.
+
+                I would like to receive
+                communications from Petfinder, operated
+                by Nestlé Purina PetCare Company, including
+                info on pet adoption and pet care, promotional
+                 materials and more. You can withdraw consent
+                 at any time. Please refer to our <a>Privacy Policy</a>
+                 or <a>Contact</a> Us page on Purina.com for more information.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col l6">
+          <div class=" col l12 div-title-invited-form-ask">
+            <span>Escribe un comentario adicional para el dueño</span>
+          </div>
+          <div class="div-textarea-form-ask">
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </div>
+          <div class="col l12 row div-title-have-pet">
+            <div class="col l7">
+              <label>¿Tines mas mascotas en casa?</label>
+            </div>
+            <div class="col l5 right">
+              <span>Sí</span><span>No</span>
+            </div>
+          </div>
+          <div class="col l12 div-btn-send-form-ask center">
+            <a href="#" class="btn">Enviar mensaje</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

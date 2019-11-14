@@ -1,0 +1,73 @@
+<section class="container">
+  <div class="row div-body-register" id="card-register">
+    <div class="col l12">
+      <br><br><br>
+          <div class="card z-depth-1">
+            <div class="card-content-register">
+
+              <div class="col l12 div-container-form-register">
+
+                <form class="subdiv-form-container-register row" method="POST" action="/Register/add-user">
+                  <div class="col l6">
+                    <div class="">
+                      <span>Nombre</span>
+                      <input type="text" name="nombre" value="{{nombre}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Apellidos</span>
+                      <input type="text" name="apellidos" value="{{apellidos}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Password</span>
+                      <input type="password" name="password" value="{{password}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Confirma el password</span>
+                      <input type="password" name="confirmpass" value="{{confirmpass}}" class="input-text validate">
+                    </div>
+
+                    <div class="">
+                      <p>
+                       <label>
+                         <input name="sexo" type="radio" value="mujer" class="with-gap"/>
+                         <span>Mujer</span>
+                       </label>
+                       <label>
+                         <input name="sexo" value="hombre" type="radio" class="with-gap"/>
+                         <span>Hombre</span>
+                       </label>
+                      </p>
+
+                    </div>
+                  </div>
+                  <div class="col l6">
+                    <div class="">
+                      <span>Email</span>
+                      <input type="email" name="email" value="{{email}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Telefono</span>
+                      <input type="text" name="telefono" value="{{telefono}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Estado</span>
+                      <input type="text" name="estado" value="{{estado}}" class="input-text validate">
+                    </div>
+                    <div class="">
+                      <span>Ciudad</span>
+                      <input type="text" name="ciudad" value="{{ciudad}}" class="input-text validate">
+                    </div>
+
+
+                    <div class="div-btn-register-form">
+                      <button type="submit" class="btn boton">Registrar</button><br><br>
+                      <a href="/Register/Asociation">Soy asociación</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>

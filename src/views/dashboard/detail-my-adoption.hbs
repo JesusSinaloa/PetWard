@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row div-container-detail-my-adoption">
+    <div class="div-title-my-adoption">
+      <h3>Detalle de adopción</h3>
+    </div>
+    <div class="col l8 div-left-detail-my-adoption">
+
+      <div class="div-container-user-my-adoption row">
+        <h5>Quién adoptó</h5>
+        <div class="col l2">
+          <div class="div-user-my-adoption-image">
+            {{#if byWhat.role}}
+            <img class="responsive-img" src="/images/asociaciones/{{byWhat.image}}" alt="imagen-user">
+            {{else}}
+            <img class="responsive-img" src="/images/comodin/user-room.png" alt="imagen-user">
+            {{/if}}
+          </div>
+        </div>
+        <div class="col l10">
+          <div class="div-user-my-adoption-nombre">
+            <span>{{byWhat.nombre}}</span>
+          </div>
+          <div class="div-user-my-adoption-correo">
+            <span>{{byWhat.email}}</span>
+          </div>
+          <div class="div-user-my-adoption-telefono">
+            <span>{{byWhat.telefono}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-container-user-my-adoption row">
+        <h5>Quién da en adopción</h5>
+        <div class="col l2">
+          <div class="div-user-my-adoption-image">
+            {{#if whose.role}}
+            <img class="responsive-img" src="/images/asociaciones/{{whose.image}}" alt="imagen-user">
+            {{else}}
+            <img class="responsive-img" src="/images/comodin/user-room.png" alt="imagen-user">
+            {{/if}}
+          </div>
+        </div>
+        <div class="col l10">
+          <div class="div-user-my-adoption-nombre">
+            <span>{{whose.nombre}}</span>
+          </div>
+          <div class="div-user-my-adoption-correo">
+            <span>{{whose.email}}</span>
+          </div>
+          <div class="div-user-my-adoption-telefono">
+            <span>{{whose.telefono}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col l4 div-right-detail-my-adoption">
+      <div class=" card div-car-pet-my-adoption">
+        <div class=" div-car-pet-image-my-adoption">
+          <img src="/images/pets/{{pet.imagen0}}" class="responsive-img" alt="">
+        </div>
+        <div class="div-car-pet-contenido">
+          <div class="div-car-pet-nombre-my-adoption">
+            <span>{{pet.nombre}}</span>
+          </div>
+          <div class="div-car-pet-sexo-my-adoption">
+            {{#if pet.sexo}}
+            <i class="fas fa-mars genero-revel-index-macho"></i>
+            {{else}}
+            <i class="fas fa-venus genero-revel-index-hembra"></i>
+            {{/if}}
+          </div>
+          <div class="div-car-pet-action-my-adoption">
+            <a href="#">Saber más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

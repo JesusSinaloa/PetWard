@@ -1,0 +1,155 @@
+
+#img-principal{
+  width: 100%;
+  height: auto;
+
+}
+.sub-images-container{
+  text-align: center;
+}
+.sub-images-container div img{
+  width: 70px;
+  height: auto;
+  
+}
+.div-name{
+  text-align: left;
+  padding-left: 100px;
+}
+.div-name h3{
+  color: #8e24aa;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20pt;
+}
+.div-pre-spec{
+  padding-left: 100px !important;
+}
+.div-pre-spec span{
+  letter-spacing: 1px;
+  font-size: 12pt;
+}
+.div-tallas{
+  margin-left: auto !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.div-tallas div{
+  border: 1px solid silver;
+  height: 30px;
+  width: 70px !important;
+  width: auto;
+  border-radius: 10px;
+  margin-right: 8px;
+  padding: 0 !important;
+  display: flex;
+  align-items: center
+}
+.div-tallas div label{
+  position: relative;
+  width: 100%;
+  padding: 25%;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  font-style: italic;
+  text-align: center;
+}
+.div-price{
+  padding: 0;
+}
+#span-price{
+  letter-spacing: 1px;
+  font-size: 18pt;
+  color: green;
+  font-weight: bold;
+}
+#span-ship{
+  letter-spacing: 1px;
+  font-size: 13pt;
+  color: #ff9300;
+  font-weight: bold;
+}
+.div-description{
+  padding-left: 100px;
+ text-align: justify;
+}
+.div-description p{
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.div-action{
+  margin-left: 100px;
+}
+.div-action a{
+  width: 150px;
+}
+.div-separator{
+  border: 1px solid #8e24aa;
+  border-radius: 8px;
+  background-color: #8e24aa;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.div-separator span{
+  font-size: 10pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+.div-quantity{
+  padding-left: 100px;
+}
+.div-quantity div{
+  padding: 0 !important;
+}
+.div-quantity div button{
+  width: 100%;
+  height: auto;
+}
+#in-quantity{
+  border: 1px solid #8e24aa;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0;
+  height: 34px;
+  width: 110%;
+  left: -8px;
+  position: relative;
+  text-align: center;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #9e44b1 !important;
+  box-shadow: none !important;
+}
+
+.datos-prenda ul{
+  margin-left: 30px;
+}
+.datos-prenda ul li i{
+  vertical-align: middle;
+  color: #9e44b1 ;
+}
+.datos-prenda p{
+  text-align: justify;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 10pt;
+  font-style: italic;
+}
+.div-hover-talla:hover{
+  background-color: #ba68c8;
+
+}
+.div-star{
+  padding-left: 100px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.div-star i{
+  color: #ffc300;
+}

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row div-container-card-my-adoptions">
+    {{#if arrayPet}}
+    {{#each arrayPet}}
+    <div class="col l4">
+      <div class="card div-card-my-adoptions">
+        <div class="card-image">
+          <img src="/images/pets/{{imagen0}}" class="responsive-img" alt="">
+        </div>
+        <div class="card-content row">
+          <div class="col l10">
+            <span class="card-title">{{nombre}}</span>
+          </div>
+          <div class="col l2 div-icon-info-my-adoption">
+            <a href="/adoption/info-my-adoption/{{_id}}">
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <h3 class="not-data-found">Aun no tinenes datos para mostrar</h3>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,116 @@
+<div class="row container">
+  <div class="col l3">
+    <aside class="">
+    <div class="card div-card-aside z-depth-0">
+    <!--<form method="POST" action="/pets-filter/filters-perro" id="form_filter">-->
+    <div class="div-checkbox">
+        <h5>Edad</h5>
+        {{#each edadF}}
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in checkbox-indigo edad" name="edad[]"  value="{{this}}"/>
+              <span>{{this}}</span>
+            </label>
+          </p>
+        {{/each}}
+
+      </div>
+      <div class="div-checkbox">
+        <h5>Raza</h5>
+        {{#each razaF}}
+        <p>
+          <label>
+            <input type="checkbox" value="{{this}}"  class="filled-in checkbox-indigo raza" name="raza[]" />
+            <span>{{this}}</span>
+          </label>
+        </p>
+        {{/each}}
+      </div>
+      <div class="div-checkbox">
+        <h5>Color</h5>
+        {{#each colorF}}
+        <p>
+          <label>
+            <input type="checkbox" value="{{this}}"  class="filled-in checkbox-indigo color"  name="color[]"/>
+            <span>{{this}}</span>
+          </label>
+        </p>
+        {{/each}}
+      </div>
+      <div class="center">
+        <input type="hidden" id="in-edad" value="" name="inEdad">
+        <input type="hidden" id="in-raza" value="" name="inRaza">
+        <input type="hidden" id="in-color" value="" name="inColor">
+        <input type="hidden" id="in-tipo-pet-filter" value="perro">
+
+      </div>
+    <!--</form>-->
+    </div>
+    </aside>
+  </div>
+  <div class="col l9 row">
+    <div class="row" id="div-cards-pets-filter">
+      {{#if pets}}
+      {{#each pets}}
+        <div class="col l4 s12 m6">
+          <div class="tarjeta-index-pet card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator card-image" src="/images/pets/{{imagen0}}">
+            </div>
+            <div class="contenido-tarjeta card-content">
+              <div class="titulo titulo-filter overflow"><span>{{nombre}}</span></div>
+            </div>
+            <div class="div-button center">
+              <a href="/detail-pet/{{_id}}"  name="button" class="btn button-revel-filter">Conocerlo</a>
+            </div>
+
+          </div>
+        </div>
+      {{/each}}
+      {{else}}
+        <div class="div-not-pets-filter-found">
+          <h3>No se encontraron resultados</h3>
+        </div>
+      {{/if}}
+    </div>
+
+
+    <div class="row" id="card-row"></div>
+        <!--<div class="col l4 s12 m6">
+          <div class="tarjeta-index-pet card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator card-image" src="/images/pets/{{imagen0}}">
+            </div>
+            <div class="contenido-tarjeta card-content">
+              <div class="titulo overflow"><span>{{nombre}}</span></div>
+            </div>
+            <div class="card-reveal center">
+              <span class="card-title revel-name-index">{{nombre}}</span>
+              <label class="raza-revel-index">{{raza}}</label><br>
+              {{#if sexo}}
+              <i class="fas fa-mars genero-revel-index-macho"></i><br>
+              {{else}}
+              <i class="fas fa-venus genero-revel-index-hembra"></i><br>
+              {{/if}}
+              <label for="" class="ubicacion-revel-index">Chihuahua, Mex</label>
+              <a href="/detail-pet/{{_id}}"  name="button" class="btn button-revel-index">Conocerlo</a>
+            </div>
+
+          </div>
+        </div>-->
+
+      <!--NUMERATION-->
+      <div id="div-pagination" class="center col l12">
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="fas fa-angle-left"></i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="fas fa-angle-right"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+</div>

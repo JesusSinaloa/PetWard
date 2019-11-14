@@ -1,0 +1,87 @@
+
+.div-card-notice{
+  border-radius: 8px !important;
+}
+.div-image-education img{
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.div-title-education{
+  padding: 30px;
+
+}
+.div-title-education h2{
+  font-size: 30pt;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: gray;
+}
+#title-red{
+  color: #ff2f2f !important;
+}
+#subtitle-gray{
+  color: #a8a8a8;
+}
+hr{
+  color: #eaeaea
+}
+.div-subtitle-education{
+  padding: 30px;
+}
+.div-subtitle-education h3{
+  font-size: 30pt;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: gray;
+}
+.div-container-notice{
+  padding: 30px;
+
+}
+.div-notice-part1 p{
+  font-size: 15pt;
+  letter-spacing: 2px;
+  text-align: justify;
+  border-radius: 5px;
+  color: gray;
+}
+.div-notice-part2 p{
+  font-size: 15pt;
+  letter-spacing: 2px;
+  text-align: justify;
+  border-radius: 5px;
+  color: gray;
+}
+.div-img-notice img{
+  width: 800px;
+  height: auto;
+
+}
+.div-footer-notice{
+  background-color: white !important;
+  border-top: 1px solid #e3e3e3;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius: 8px;
+  padding: 30px;
+}
+.div-icon-foo-notice img{
+  width: 150px;
+  height: auto;
+}
+.div-title-foo-notice h3{
+  letter-spacing: 1px;
+  font-size: 15pt;
+  font-weight: bold;
+  color: darkgray;
+}
+.div-body-foo-notice label{
+  font-weight: bold;
+  font-size: 10pt;
+  color: silver;
+  letter-spacing: 1px;
+
+}

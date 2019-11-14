@@ -1,0 +1,215 @@
+<section>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <a href="Education">
+          <img src="/images/slider/slider1.png"> <!-- random image -->
+        </a>
+        <div class="caption left-align">
+
+        </div>
+      </li>
+      <li>
+        <a href="Education">
+          <img src="/images/slider/slider2.png"> <!-- random image -->
+        </a>
+        <div class="caption right-align">
+
+        </div>
+      </li>
+      <li>
+        <a href="Education">
+          <img src="/images/slider/slider3.png"> <!-- random image -->
+        </a>
+        <div class="caption center-align">
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="section-navigation-pets container">
+  <div class="row">
+    <div class="col l12 s12 m12 div-navigation-pets">
+      <div class="row">
+        <div class="col l4 s3 m3">
+          <img src="/images/iconsPet/dog-icon-navigation.png" class="responsive-img" alt=""><br>
+          <a href="pets-filter/perro"><span>Perros</span></a>
+        </div>
+        <div class="col l4 s3 m3">
+          <img src="/images/iconsPet/cat-icon-navigation.png" class="responsive-img" alt=""><br>
+          <a href="pets-filter/gato"><span>Gatos</span></a>
+        </div>
+        <div class="col l4 s3 m3">
+          <img src="/images/iconsPet/loop.png" class="responsive-img" alt=""><br>
+          <a id="action-others-pets-show">Otros <i class="fas fa-caret-down"></i></a>
+          <a id="action-others-pets-hide">Otros <i class="fas fa-caret-up"></i></a>
+
+        </div>
+      </div>
+    </div>
+    <div class=" col l4 s4 m4 right">
+      <ul class="ul-other-pets-navigations">
+        <li><a><img src="/images/iconsPet/bird_icon_navigation.png" class=" img-ul-others-pets" alt="">Aves</a></li>
+        <li><a> <img src="/images/iconsPet/fish_icon_navigation.png" class="img-ul-others-pets" alt="">Peces</a></li>
+        <li><a> <img src="/images/iconsPet/hamster-icon-navigation.png" class=" img-ul-others-pets" alt="">Ruedores</a></li>
+        <li><a> <img src="/images/iconsPet/rabbit_icon_navigation.png" class=" img-ul-others-pets" alt="">Conejos</a></li>
+        <li><a> <img src="/images/iconsPet/turtle_icon_navigation.png" class=" img-ul-others-pets" alt="">Tortugas</a></li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section-asociaciones">
+  <div class="container div-asociaciones">
+    <div class="center div-title-asociaciones">
+          <h2 class="title-section-asociaciones">Ayuda a la comunidad</h2>
+
+    </div>
+    <div class="row">
+      {{#each asociations}}
+      <div class="col s12 m6 l3">
+      <a href="/detail-asociacion/{{_id}}" class="action-associations-index">
+        <img src="/images/asociaciones/{{logo_img}}">
+      </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+<div class="container">
+    <section id="mascotas">
+      <div class="div-title-enable-pets">
+        <h1>Mascotas disponibles para adopción</h1>
+      </div>
+      <div class="row">
+        {{#each pets}}
+
+        <div class="col l3 s12 m6">
+          <div class="tarjeta-index-pet card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator card-image" src="/images/pets/{{imagen0}}">
+            </div>
+            <div class="contenido-tarjeta card-content">
+              <div class="titulo overflow"><span>{{nombre}}</span></div>
+            </div>
+            <div class="card-reveal center">
+              <span class="card-title revel-name-index">{{nombre}}</span>
+              <label class="raza-revel-index">{{raza}}</label><br>
+              {{#if sexo}}
+              <i class="fas fa-mars genero-revel-index-macho"></i><br>
+              {{else}}
+              <i class="fas fa-venus genero-revel-index-hembra"></i><br>
+              {{/if}}
+              <label for="" class="ubicacion-revel-index">{{ubicacion.[0].estado}}, {{ubicacion.[0].ciudad}}</label>
+              <a href="/detail-pet/{{_id}}" name="button" class="btn button-revel-index">Conocerlo</a>
+            </div>
+
+          </div>
+        </div>
+
+      {{/each}}
+
+      </div>
+    </div>
+  </section>
+</div>
+<section class="section-match-perfecto">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 center div-h3-index-match-perfecto">
+        <h1>¿Estas planeando adoptar?</h1>
+      </div>
+      <div class="col l12 center">
+        <div class="div-icon-index-match-perfecto center">
+          <img src="/images/matchPerfecto/icon_match.png" alt="">
+        </div>
+        <div class="div-h3-index-match-perfecto center">
+          <h3>Encuentra tu match perfecto</h3>
+        </div>
+        <div class="div-p-index-match-perfecto center">
+          <p>Haz soñado con ese compañero que llene tus dias de felicidad</p>
+        </div>
+        <div class="div-btn-index-match-perfecto center">
+          <a class="btn modal-trigger btn-index-match-perfecto-open" href="#modal1" name="button">Encuentralo</a>
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+          <form action="/find-match-perfect" method="POST">
+            <div class="modal-content div-modal-match-container">
+              <div class="action-close-modal-match">
+                <a href="#!" class="modal-close"><i class="far fa-times-circle fa-2x"></i></a>
+              </div>
+              <div class="div-modal-match-title center">
+                <h4>Responde una pequeñas preguntas</h4>
+                <p>Para poder encontrar a tu amigo perfecto</p>
+              </div>
+              <div class="div-modal-match-questions">
+                <div class="row">
+                  <div class="col l6">
+                    <span>¿Que tipo de mascota deseas?</span>
+                    <select class="browser-default" name="tipo">
+                      <option value="" disabled selected>Elige una opción</option>
+                      <option value="perro">Perro</option>
+                      <option value="gato">Gato</option>
+                    </select>
+                  </div>
+                  <div class="col l6">
+                    <span>¿Cual es tu tipo de personalidad?</span>
+                    <select class="browser-default" name="personalidad">
+                      <option value="" disabled selected>Elige una opción</option>
+                      <option value="amigable">Amigable</option>
+                      <option value="enojon">Enojon</option>
+                      <option value="tranquila">Tranquila</option>
+                      <option value="depresivo">Depresivo</option>
+                      <option value="combinadas">Combinadas</option>
+                    </select>
+                  </div>
+                  <div class="col l6">
+                    <span>¿Te gusta hacer ejercicio?</span>
+                    <select class="browser-default" name="ejercicio">
+                      <option value="" disabled selected>Elige una opción</option>
+                      <option value=true>Sí</option>
+                      <option value=false>No</option>
+                    </select>
+                  </div>
+                  <div class="col l6">
+                    <span>¿Cuantas horas trabajas al día?</span>
+                    <select class="browser-default" name="horasT">
+                      <option value="" disabled selected>Elige una opción</option>
+                      <option value=0>No trabajo</option>
+                      <option value=4>4</option>
+                      <option value=6>6</option>
+                      <option value=8>8</option>
+                      <option value=10>10</option>
+                      <option value=11>+10</option>
+                    </select>
+                  </div>
+                  <div class="col l6">
+                    <span>¿Padeses alguna enfermedad?</span>
+                    <select class="browser-default" name="enfermedad">
+                      <option value="" disabled selected>Elige una opción</option>
+                      <option value=true>Sí</option>
+                      <option value=false>No</option>
+                    </select>
+                  </div>
+                  <div class="col l6">
+                    <span>¿Sales mucho de la ciudad?</span>
+                    <select class="browser-default" name="salir">
+                      <option value="" disabled selected>Elige una opción</option>
+                      <option value=true>Sí</option>
+                      <option value=false>No</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="div-modal-match-btn-find center">
+                <button type="submit" class="btn btn-find-modal-match-container">Encontrar</button>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

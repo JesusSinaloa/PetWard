@@ -1,0 +1,44 @@
+
+
+    {{#each couples}}
+      <div class="col l3 s12 m6">
+        <div class="card z-depth-1">
+
+          <div class="card-image waves-effect waves-block waves-light">
+            <a href="detail-couple/{{_id}}" class=" detail-couple">
+              <img class="activator card-image" src="/images/couple/{{imagen0}}">
+            </a>
+          </div>
+    
+          <div class="card-content contenido-tarjeta">
+            <div class="center div-name">
+              <span>{{nombre}}</span>
+            </div>
+            <div class="div-loczation center">
+                <i class="fas fa-location-arrow"></i>
+                <span>{{ubicacion.[0].estado}}</span>
+            </div>
+            <div class="div-btn">
+
+              <div class="col l12 center">
+                <i class="far fa-heart fa-2x icon-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    {{/each}}
+    <div id="div-pagination" class="center col l12">
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="fas fa-angle-left"></i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="fas fa-angle-right"></i></a></li>
+      </ul>
+    </div>

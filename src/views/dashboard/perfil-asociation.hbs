@@ -1,0 +1,128 @@
+<div class="row container">
+  <div class="col l12">
+    <div class="card card-data-user">
+      <form method="POST" action="/perfil/edit-perfil-asociation/{{dataAsociacion.[0]._id}}?_method=PUT">
+      <div class="card-content row">
+        <div class="col l2">
+          <div class="img-user-circle-asociation">
+            <img src="/images/asociaciones/{{dataAsociacion.[0].logo_img}}" alt="">
+          </div>
+        </div>
+        <div class="col l12 div-title-card-data-user">
+          <span>Edita tu perfil - {{dataAsociacion.[0].nombre}}</span>
+          <input type="hidden" name="id_user" value="{{dataAsociacion.[0].id_user}}">
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <input type="hidden" name="_method" value="PUT">
+          <div class="col l6">
+            <span>Nombre</span>
+            <input type="text" name="nombre" value="{{dataAsociacion.[0].nombre}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Email</span>
+            <input type="text" name="email" value="{{dataAsociacion.[0].email}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6">
+            <span>Calle</span>
+            <input type="text" name="calle" value="{{dataAsociacion.[0].ubicacion.[0].calle}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Colonia</span>
+            <input type="text" name="colonia" value="{{dataAsociacion.[0].ubicacion.[0].colonia}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Estado</span>
+            <input type="text" name="estado" value="{{dataAsociacion.[0].ubicacion.[0].estado}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Ciudad</span>
+            <input type="text" name="ciudad" value="{{dataAsociacion.[0].ubicacion.[0].ciudad}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>CP</span>
+            <input type="text" name="cp" value="{{dataAsociacion.[0].ubicacion.[0].cp}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Telefono</span>
+            <input type="text" name="telefono" value="{{dataAsociacion.[0].telefono}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Nuevas Imagenes</span>
+            <input type="file" name="imagenes" value="Imagenes" multiple>
+          </div>
+          <div class="col l6 ">
+            <span>Nuevos Videos</span>
+            <input type="file" name="videos" value="Videos" multiple>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Facebook</span>
+            <input type="url" name="facebook" value="{{dataAsociacion.[0].social.[0].facebook}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Instagram</span>
+            <input type="url" name="instagram" value="{{dataAsociacion.[0].social.[0].instagram}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Twitter</span>
+            <input type="url" name="twitter" value="{{dataAsociacion.[0].social.[0].twitter}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Google</span>
+            <input type="url" name="google" value="{{dataAsociacion.[0].social.[0].google}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Mascotas alojadas en su refujio</span>
+            <input type="text" name="alojadas" value="{{dataAsociacion.[0].alojadas}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Donativos mensuales</span>
+            <input type="text" name="donativos" value="{{dataAsociacion.[0].donativos}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l6 ">
+            <span>Rescates mensuales</span>
+            <input type="text" name="rescates" value="{{dataAsociacion.[0].rescates}}" class="input-text">
+          </div>
+          <div class="col l6 ">
+            <span>Certificados</span>
+            <input type="text" name="meritos" value="{{dataAsociacion.[0].meritos}}" class="input-text">
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 ">
+            <span>Descripción</span>
+            <textarea name="descripcion" rows="8" cols="80">{{dataAsociacion.[0].descripcion}}</textarea>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <div class="col l12 ">
+            <label>Si deseas cambiar tu logotipo o numero de cuenta, comunicate con nosotros atravez del chat o al correo correspondiente...</label>
+          </div>
+        </div>
+        <div class="col l12 div-data-input-perfil">
+          <a href="#" class="action-link-update-pass">Quieres actualizar tu password?</a>
+        </div>
+        <div class="col l12 div-btn-accion-perfil">
+          <button class="btn boton" type="submit" >Actualizar</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+
+</div>

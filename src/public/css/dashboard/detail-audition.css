@@ -1,0 +1,108 @@
+.div-container-detail-audition{
+  margin-top: 50px;
+}
+.div-container-left-audition{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.div-pay-detail{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  text-align: center;
+}
+.div-detail-pet{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  text-align: center;
+}
+.div-title-left-audition h3{
+  color: #505050;
+  letter-spacing: 1px;
+  margin: 0 !important;
+}
+.div-date-left-audition label{
+  color: #969696;
+  font-size: 9pt;
+  letter-spacing: 1px;
+}
+.div-container-data-left-audition h4{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-data-peticion-left-audition{
+  padding-left: 20px;
+}
+.div-data-peticion-left-audition h6{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-data-peticion-left-audition span{
+  color: #969696;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  padding-left: 10px;
+}
+.div-data-to-left-audition{
+  padding-left: 20px;
+}
+.div-data-to-left-audition h6{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-data-to-left-audition span{
+  color: #969696;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  padding-left: 10px;
+}
+.div-status-left-audition{
+  margin-top: 20px;
+}
+#div-status-audition-proccess > span{
+  color: #505050;
+  letter-spacing: 1px;
+  border: 1px dashed #969696;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: #ffe000b3;
+}
+.div-pay-detail-i > i{
+  color: #505050;
+
+}
+.div-pay-detail-data > span{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 10pt;
+
+}
+#span-id-pay-audition{
+  font-size: 7pt !important;
+  font-weight: bold;
+}
+.div-detail-pet{
+  margin-top: 30px;
+}
+.div-detail-pet-img > img{
+  border-radius: 50%;
+  border: 2px solid purple;
+  width: 70%;
+}
+.div-detail-pet-data span{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 15pt;
+}
+.div-detail-pet-action > a{
+  color: purple;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+}

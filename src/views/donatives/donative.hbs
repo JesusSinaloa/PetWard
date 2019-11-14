@@ -1,0 +1,86 @@
+<section>
+  <div class="container">
+    <form action="/donative/send" method="POST">
+    <div class="row div-container-form-donative">
+      <div class="col l4 div-container-form-donative-left">
+        <img src="/images/donatives/dogger_img_big_1.jpg" alt="" class="responsive-img">
+      </div>
+      <div class="col l8 div-container-form-donative-right">
+        <div class="col l12 div-header-donative-form">
+          <div class="col l10 div-header-donative-form-left">
+            <h2>Donación {{asociation.nombre}}</h2>
+
+          </div>
+          <div class="col l2 div-header-donative-form-right">
+            <label>Moneda</label>
+            <select class="browser-default" name="moneda">
+              <option value="MXN" disabled selected>MXN $</option>
+              <option value="USD">USD $</option>
+              <option value="MXN">MXN $</option>
+              <option value="AUD">AUD $</option>
+            </select>
+          </div>
+        </div>
+        <div class="col l12">
+          <style>
+            [type="radio"]:checked + span:after,
+            [type="radio"].with-gap:checked + span:before,
+            [type="radio"].with-gap:checked + span:after {
+            border: 2px solid #49affd;
+            }
+
+            [type="radio"]:checked + span:after,
+            [type="radio"].with-gap:checked + span:after {
+            background-color: #49affd;
+            }
+          </style>
+          <p id="radio-frecueny">
+            <label>
+              <input class="with-gap" name="frecuencia" type="radio"  value="1"/>
+              <span>Solo esta vez</span>
+            </label>
+            <label>
+              <input class="with-gap" name="frecuencia" type="radio"  value="0"/>
+              <span>Mensualmente</span>
+            </label>
+          </p>
+        </div>
+        <!--
+        <div class="col l12 row div-quantity-donate">
+          <div class="col l4 center">
+            $50
+          </div>
+          <div class="col l4 center">
+            $25
+          </div>
+          <div class="col l4 center">
+            $10
+          </div>
+        </div>
+      -->
+        <div class="col l12 row div-other-quantity-doante">
+          <div class="col l1 div-label center">
+            <span>$</span>
+          </div>
+          <div class="col l9 div-input">
+            <input type="tel" placeholder="Cantidad" name="cantidad" value="">
+          </div>
+        </div>
+        <div class="col l12 div-pay-donate">
+          <h5>Procede a tu pago</h5>
+          <input type="hidden" name="asociacion" value="{{asociation._id}}">
+          
+        </div>
+        <div class="col l10 div-pay-donate">
+
+              <button type="submit" class=" btn-paypal">
+                <i class="fab fa-paypal"></i>
+              </button>
+
+
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+</section>

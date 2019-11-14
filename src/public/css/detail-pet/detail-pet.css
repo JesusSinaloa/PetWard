@@ -1,0 +1,523 @@
+
+#img-principal{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+.sub-images-container{
+  text-align: center;
+}
+.sub-images-container div img{
+  width: 70px;
+  height: auto;
+
+}
+.div-images{
+  margin-top: 15px;
+}
+.div-name{
+  text-align: left;
+  padding-left: 50px !important;
+}
+.div-name h3{
+  color: #8e24aa;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.div-name-detail h1{
+  color: #8e24aa;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.div-pre-spec{
+  padding-left: 50px !important;
+}
+.div-pre-spec label{
+  letter-spacing: 1px;
+}
+.div-description{
+  padding-left: 50px;
+ text-align: justify;
+}
+.div-description p{
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+.certificate{
+  padding-left: 50px;
+}
+
+.certificate img{
+  width: 110px;
+  height: auto;
+
+}
+.div-action{
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.div-action a{
+  width: 150px;
+}
+.div-separator{
+  border: 1px solid #8e24aa;
+  border-radius: 8px;
+  background-color: #8e24aa;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.div-separator span{
+  font-size: 10pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+.div-tabs-container{
+  padding: 0 !important;
+}
+.tabs {
+  background-color: #f4e9ff;
+}
+.tabs li a{
+  color: #8e24aa !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10pt !important;
+  font-weight: bold;
+}
+.tabs .tab a:hover {
+            background-color: #e8ccf9 ;
+            color:#e8ccf9 ;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#e8ccf9 ;
+            color:#e8ccf9 ;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#8e24aa;
+        } /*Color of underline*/
+.tab-list i{
+  color: #8e24aa;
+  margin-right: 5px;
+}
+.cualidades-tab li{
+  letter-spacing: 1px;
+}
+.div-img-dueño img{
+  width: 100%;
+  height: auto;
+  border: 1px solid #a19e9e;
+  margin-top: 30px;
+}
+.name-dueño{
+  margin-left: 30px;
+}
+.datos-personales-dueño ul{
+  margin-left: 30px;
+}
+.btn-ver-mas-dueño{
+  margin-left: 30px;
+}
+.btn-ver-mas-dueño button{
+  width: 185px;
+}
+#test1{
+  background-color: white;
+}
+#test2{
+  background-color: white;
+}
+#test3{
+  background-color: white;
+}
+#test4{
+  background-color: white;
+}
+.div-container-header-pet{
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.div-left-container-header-pet{
+  border-right: 1px solid silver;
+}
+.tabs{
+  background-color: white;
+}
+.div-left-detail-pet{
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px !important;
+  height: auto;
+}
+.div-ask-for-pet{
+  height: 280px;
+  background-color: purple;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.div-contact-pet{
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+}
+.div-header-ask-for-pet{
+  height: 200px;
+  background-color: purple;
+
+}
+.div-foo-ask-for-pet{
+  height: auto;
+  background-color: white;
+}
+.div-name{
+
+  border-bottom: 1px solid silver;
+}
+
+.div-name-detail span{
+ color: #505050;
+ font-size: 12pt;
+ letter-spacing: 1px;
+}
+.div-sex{
+  border-bottom: 1px solid silver;
+    padding: 30px 0 30px 0 !important;
+}
+.div-sex i{
+
+  margin-right: 10px;
+
+}
+.genero-revel-index-macho{
+  color: #2e76ff;
+  font-size: 35px;
+}
+.genero-revel-index-hembra{
+  color: #fe9be9;
+  font-size: 35px;
+}
+.div-sex span{
+  color: #505050;
+  font-size: 13pt;
+  letter-spacing: 1px;
+}
+.div-about{
+  border-bottom: 1px solid silver;
+    padding: 30px 0 30px 0 !important;
+}
+.div-about .div-vacunas h4{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-about .div-vacunas div{
+  padding-left: 30px;
+}
+.div-about .div-vacunas div > h5{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-about .div-vacunas div > ul{
+  padding-left: 20px;
+}
+.div-about .div-vacunas div > ul > li{
+  color: #969696;
+  letter-spacing: 1px;
+  }
+
+.div-health h4{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-health ul{
+  padding-left: 20px;
+}
+.div-health li{
+  color: #969696;
+  letter-spacing: 1px;
+}
+.div-meet{
+
+    padding: 30px 0 30px 0 !important;
+
+}
+.div-meet h3{
+    color: #505050;
+    letter-spacing: 1px;
+}
+.div-meet p{
+  color: #969696;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.div-ask-for-pet{
+  padding: 0 !important;
+}
+.div-ask-for-pet .div-btn-ask a{
+  width: 100%;
+  color: purple;
+  background-color: white !important;
+  box-shadow: none !important;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.div-ask-for-pet .div-btn-patrocinar a{
+  width: 100%;
+  color: white;
+  background: none !important;
+  box-shadow: none !important;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+.div-options-ask-for-pets{
+  margin-top: 20%;
+  border-top: 2px solid #5b005b;
+}
+.div-options-ask-for-pets div{
+ display: flex;
+ align-items: center;
+ padding-top: 16px !important;
+}
+.div-options-ask-for-pets-left {
+   border-right: 2px solid #5b005b;
+   padding-left: 16px !important;
+}
+.div-options-ask-for-pets-right {
+
+   padding-left: 30px !important;
+}
+.div-options-ask-for-pets div > i{
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.div-options-ask-for-pets div > span{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 15pt;
+}
+.div-contact-pet{
+  padding: 0 !important;
+  margin-top: 70px;
+}
+.div-img-contact-pet img{
+  width: 35%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid purple;
+  margin-top: -60px;
+  background-color: white;
+}
+.div-presentation-address{
+  padding: 20px;
+}
+.div-presentation-address h2{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 25pt;
+}
+.div-presentation-address label{
+  font-size: 10pt;
+  color: #969696;
+  letter-spacing: 1px;
+}
+.div-map-location-pet{
+  margin-top: 30px;
+  background-color: #96daf3;
+  height: 150px;
+}
+.subdiv-address-contact{
+  padding: 20px !important;
+}
+.subdiv-address-contact .icon-address i{
+  color: #505050;
+  font-size: 15px;
+}
+.subdiv-address-contact .detail-address{
+  border-bottom: 1px solid silver;
+  padding-bottom: 5px;
+}
+.subdiv-address-contact .detail-address span{
+  color: #969696;
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.subdiv-email-contact .icon-email i{
+  color: #505050;
+  font-size: 15px;
+}
+.subdiv-email-contact .detail-email{
+  border-bottom: 1px solid silver;
+  padding-bottom: 5px;
+}
+.subdiv-email-contact .detail-email span{
+  color: #969696;
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.subdiv-phone-contact .icon-phone i{
+  color: #505050;
+  font-size: 15px;
+}
+.subdiv-phone-contact .detail-phone{
+  border-bottom: 1px solid silver;
+  padding-bottom: 5px;
+}
+.subdiv-phone-contact .detail-phone span{
+  color: #969696;
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+.div-btn-more-details{
+  text-align: center;
+  padding: 20px !important;
+}
+.div-btn-more-details a{
+  width: 100%;
+  background: none !important;
+  border-radius: 15px;
+  border: 2px solid #505050;
+  color: #505050;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  box-shadow: none !important;
+}
+.div-header-ask-for-pet{
+margin: 0;
+}
+.div-header-ask-for-pet-left{
+  padding: 20px !important;
+}
+.div-header-ask-for-pet-left img{
+  width: 60%;
+  border: 5px solid white;
+  border-radius: 50%
+}
+.div-header-ask-for-pet-right .title-ask-for h3{
+  color: white;
+  font-size: 30pt;
+  letter-spacing: 1px;
+}
+.head-ask-location span{
+  color: white;
+  font-size: 18pt;
+  letter-spacing: 1px;
+}
+.head-ask-sex i{
+  color: #2b9cfe;
+  font-size: 12pt;
+}
+.head-ask-sex span{
+color: white;
+letter-spacing: 1px;
+font-size: 12pt;
+}
+.div-sing-in-form-ask{
+  margin-top: 40px;
+}
+.div-sing-in-form-ask a{
+  color: purple;
+  font-size: 13pt;
+  letter-spacing: 1px;
+}
+.div-sing-in-form-ask span{
+  color: #505050;
+  font-size: 13pt;
+  letter-spacing: 1px;
+  margin-right: 7px;
+}
+.div-invited-form-ask{
+  margin-top: 15px;
+}
+.div-title-invited-form-ask span{
+  color: #505050;
+  font-size: 9pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.div-title-invited-form-ask{
+  margin-bottom: 10px;
+}
+.div-p-receive-notification{
+  text-align: justify;
+  font-size: 10pt;
+  color: #969696;
+  letter-spacing: 1px;
+}
+.div-p-receive-notification p > a{
+  color: purple;
+}
+.div-textarea-form-ask textarea{
+  height: 250px;
+  width: 100%;
+  border: 1px solid silver;
+  padding: 10px;
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-title-have-pet{
+  margin-top: 30px;
+}
+.div-title-have-pet div > label{
+  font-size: 11pt;
+  color: #969696;
+  letter-spacing: 1px;
+}
+.div-title-have-pet div > span{
+  border: 1px solid silver;
+  padding: 20px;
+  letter-spacing: 1px;
+  color: #969696;
+  background:none;
+}
+.div-btn-send-form-ask{
+  margin-top: 20px;
+}
+.div-btn-send-form-ask a{
+  width: 90%;
+  background-color: purple !important;
+  border-radius: 20px;
+  color: white;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  box-shadow: none !important;
+}
+#div-vacunas-perro {
+  display: none;
+}
+#div-vacunas-gato{
+  display: none;
+}
+.btn-not-login{
+  padding: 10px;
+  letter-spacing: 1px;
+  color: #505050;
+  font-size: 10pt;
+  border: 1px solid #505050;
+  border-radius: 5px;
+
+}
+.span-pertenece-aso{
+  color: #505050;
+  letter-spacing: 1px;
+  font-size: 11pt;
+
+
+}
+.span-pertenece-aso a{
+  color: purple;
+  letter-spacing: 1px;
+  font-size: 11pt;
+}

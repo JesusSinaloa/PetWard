@@ -1,0 +1,21 @@
+.div-container-type-adoption div > div {
+    border: 1px solid silver;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-container-type-adoption h3{
+  color: #505050;
+  letter-spacing: 1px;
+}
+.div-container-type-adoption div > div > a{
+color: #505050;
+letter-spacing: 1px;
+font-size: 16pt;
+}
+.div-container-type-adoption div > div > a > i{
+font-size: 30px;
+}

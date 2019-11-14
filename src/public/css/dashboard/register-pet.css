@@ -1,0 +1,126 @@
+.div-register-pet{
+  padding: 10px;
+
+}
+.card-register-pet{
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  box-shadow: none;
+}
+.card-register-pet-title{
+  text-align: center;
+}
+.card-register-pet-title h5{
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 22pt;
+  color: #505050;
+}
+
+.card-register-pet-title label{
+  font-weight: bold;
+  color: silver;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 10pt;
+}
+.div-tabs{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.div-tabs ul li a{
+  color: white !important;
+  letter-spacing: 1px !important;
+  font-weight: bold !important;
+  font-size: 8pt !important;
+}
+.div-tabs ul{
+  background: #ae99ce;
+  width: 100%;
+  overflow-x: hidden;
+}
+.tabs .tab a:hover {
+            background-color: #e8ccf9 ;
+            color:#e8ccf9 ;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:#e8ccf9 ;
+            color:#e8ccf9 ;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color:#9247FF;
+        } /*Color of underline*/
+
+.about-tab-title{
+text-align: center;
+}
+.about-tab-title h5{
+  letter-spacing: 1px;
+  font-size: 18pt;
+  font-weight: bold;
+}
+.div-img-upload{
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+.div-img-upload label{
+  margin-top: 10px;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+#img-upload{
+  border-radius: 50%;
+  border: 5px solid silver;
+  width: 50%;
+  height: auto;
+
+}
+#img-upload:hover{
+border:5px solid #9247FF;
+}
+.div-in-about{
+  margin-top: 10px;
+}
+.div-in-about div input{
+  width: 90% !important;
+}
+.div-in-about div span{
+letter-spacing: 1px;
+font-size: 10pt;
+font-weight: bold;
+border-radius: 5px;
+color: #888;
+}
+.div-in-about-text textarea{
+letter-spacing: 1px;
+font-size: 10pt;
+font-weight: bold;
+border-radius: 5px;
+color: #888;
+background-color: white;
+border: 1px solid #969696;
+box-shadow: none;
+height: 100px;
+padding: 10px;
+margin-top: 5px;
+}
+.div-in-about-text span{
+letter-spacing: 1px;
+font-size: 10pt;
+font-weight: bold;
+border-radius: 5px;
+color: #888;
+}
+.div-btn-accion-register-pet{
+  text-align: center;
+  padding-top: 15px !important;
+}
+.div-btn-accion-register-pet button{
+  width: 80%;
+}

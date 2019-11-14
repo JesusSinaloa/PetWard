@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row div-containerd-type-pet">
+    {{#if user.role}}
+    <div class="col l6">
+      <div class="div-type-adopted">
+        <a href="/my-pets-adoption/{{idUser}}">
+          <i class="fas fa-paw fa-8x"></i><br>
+          <span>En adopción</span>
+        </a>
+      </div>
+    </div>
+    {{else}}
+    <div class="col l6">
+      <div class="div-type-couple">
+        <a href="/my-pets-couple/{{idUser}}">
+          <i class="fas fa-heart fa-8x"></i><br>
+          <span>Parejas</span>
+        </a>
+      </div>
+    </div>
+    <div class="col l6">
+      <div class="div-type-adopted">
+        <a href="/my-pets-adoption/{{idUser}}">
+          <i class="fas fa-paw fa-8x"></i><br>
+          <span>En adopción</span>
+        </a>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>

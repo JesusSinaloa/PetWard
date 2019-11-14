@@ -1,0 +1,121 @@
+/*PERFIL*/
+.card-presentation-user{
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid silver;
+}
+.card-data-user{
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid silver;
+}
+.div-bg-img img{
+  width: 100%;
+  height: 100px;
+}
+.card-presentation-user .card-content{
+  padding: 0 !important;
+}
+.img-user-circle{
+  position: relative;
+  margin-top: -25% !important;
+  margin-left: 30%;
+}
+
+.img-user-circle img{
+border-radius: 50%;
+border: 5px solid silver;
+width: 100px;
+height: auto;
+margin: auto;
+}
+.img-user-circle-asociation img{
+border-radius: 50%;
+border: 5px solid silver;
+width: 100px;
+height: auto;
+margin: auto;
+}
+.div-description-user{
+  padding: 10px;
+  text-align: center;
+}
+.div-description-user span{
+
+  font-size: 12pt;
+  letter-spacing: 1px;
+  color: #9c27b0;
+  font-weight: bold;
+}
+.div-description-cont{
+  padding: 10px;
+  text-align: center;
+}
+.div-description-cont span{
+  letter-spacing: 1px;
+  font-size: 10pt;
+  color: silver;
+  font-style: italic;
+}
+.card-action{
+  padding: 10px !important;
+  text-align: center;
+}
+.card-action i{
+  color: orange;
+}
+.div-title-card-data-user{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.div-title-card-data-user span{
+  font-size: 18pt;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #505050;
+}
+.div-data-input-perfil div{
+  margin-top: 10px;
+margin-bottom: 10px;
+}
+.div-data-input-perfil span{
+color: silver;
+}
+.div-about-me-txt{
+  text-align: center;
+  padding: 25px !important;
+
+}
+.div-about-me-txt span{
+  color:silver;
+}
+.div-about-me-txt textarea{
+  background: white;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  font-weight: normal;
+  padding: 10px;
+  border: 1px solid purple;
+  height: 100px;
+}
+.div-btn-accion-perfil button{
+  float: right;
+}
+.action-link-update-pass{
+  color: purple;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  margin-left: 10px;
+}
+.div-btn-update-pic-perfil{
+  text-align: center;
+}
+#btn-update-pic-perfil{
+  background: none !important;
+  border: none !important;
+  color: purple;
+  letter-spacing: 1px;
+  font-size: 11pt;
+  font-weight: bold;
+}
+/*PERFIL*/

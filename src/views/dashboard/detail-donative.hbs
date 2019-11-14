@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="div-card-detail-donation row">
+    <div class="col l3 div-card-detail-donation-left">
+      <ul>
+        <a href="#"><li id="btn-acreditado">Acreditado</li></a>
+        <a href="#"><li id="btn-recibido">Recibido</li></a>
+        <a href="#"><li id="btn-redireccionado">Redireccionado</li></a>
+        <a href="#"><li id="btn-entregado">Entregado</li></a>
+      </ul>
+    </div>
+    <div class="col l9 div-card-detail-donation-right">
+      <div id="div-donation-1">
+        <div class="div-logo center" id="logo-paypal">
+          <i class="fab fa-paypal fa-5x"></i>
+        </div>
+        <div class="div-title center">
+          <h3>Via de pago Paypal</h3>
+        </div>
+        <div class="div-description">
+          <p>El pago se ha procesado por medio de la plataforma de pagos en linea
+          llamada paypal, su ID de pago es <span>{{donative.id}}</span></p>
+        </div>
+      </div>
+      <div id="div-donation-2">
+        <div class="div-logo center">
+          <i class="fas fa-file-invoice-dollar fa-5x"></i>
+        </div>
+        <div class="div-title center">
+          <h3>Recibimos el deposito</h3>
+        </div>
+        <div class="div-description">
+          <p>El deposito ha llegado a nuestra cuenta, esperemos pronto sea liberado, para poder enviarlo
+          a tu cuenta bancaria correspondiente.</p>
+        </div>
+      </div>
+      <div id="div-donation-3">
+        <div class="div-logo center">
+            <i class="far fa-handshake fa-5x"></i>
+        </div>
+        <div class="div-title center">
+          <h3>Dinero liberado</h3>
+        </div>
+        <div class="div-description">
+          <p>El dinero a sido liberado, de inmediato sera dirigido a tu cuenta bancaria
+          que proporcioanaste anterirmente en el proceso de registro. Si tienes duda de cual es
+          puedes verlo en el apartadod e tu información personal.</p>
+        </div>
+      </div>
+      <div id="div-donation-4">
+        {{#if donative.redireccionada}}
+        <div class="div-logo center" id="logo-happy">
+          <i class="far fa-laugh-beam fa-5x"></i>
+        </div>
+        <div class="div-title center">
+          <h3>Pago Redirrecionado</h3>
+        </div>
+        <div class="div-description">
+          <p>El pago ya ha sido entregado a tu cuente bancaria, ahora ve y has feliz
+          a tus masoctas comprandoles una rica comida, el numero de referencia es
+        <span>{{donative.id_redireccion}}</span></p>
+        </div>
+        {{else}}
+        <div class="div-logo center" id="logo-sad">
+          <i class="far fa-frown fa-5x"></i>
+        </div>
+        <div class="div-title center">
+          <h3>Pago Redirrecionado</h3>
+        </div>
+        <div class="div-description">
+          <p>El pago no ha sido entregado aun en tu cuente bancaria, en cuanto sea depositada
+          veras reflejado un cmabio en este anuncio, cualquier duda puedes comunicarte con nostros
+        en la seccion de ayuda.</p>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

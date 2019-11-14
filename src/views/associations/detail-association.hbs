@@ -1,0 +1,171 @@
+<section>
+  <div class="container">
+    <div class="row div-card-association-info">
+      <div class="col l5 m6 s6 div-left-description-association">
+        <div class="div-logo-association">
+          <img src="/images/asociaciones/{{asociation.logo_img}}" class="responsive-img" alt="">
+        </div>
+        <div class="div-title-association">
+          <h3>{{asociation.nombre}} esta aqui!</h3>
+        </div>
+        <div class="row div-container-circles">
+          <div class="col l3 div-circle-adoption">
+            <span>{{asociation.alojadas}}</span><br>
+            <label>Mascotas</label>
+          </div>
+          <div class="col l3 div-circle-donation">
+            <span>{{asociation.donativos}}</span><br>
+            <label>Donativos</label>
+          </div>
+          <div class="col l3 div-circle-rescue">
+            <span>{{asociation.rescates}}</span><br>
+            <label>Rescates</label>
+          </div>
+          <div class="col l3 div-circle-certifications">
+            <span>{{asociation.meritos}}</span><br>
+            <label>Meritos</label>
+          </div>
+        </div>
+        <div class="div-description-association">
+          <p>{{asociation.descripcion}}</p>
+        </div>
+        <div class="div-social-media-association row">
+          <div class="col l3">
+            <a href="{{asociation.social.[0].facebook}}">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </div>
+          <div class="col l3">
+            <a href="{{asociation.social.[0].instagram}}">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="col l3">
+            <a href="{{asociation.social.[0].twitter}}">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </div>
+          <div class="col l3">
+            <a href="{{asociation.social.[0].google}}">
+              <i class="fab fa-google-plus-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row div-btn-action-association">
+          <div class="col l6 center">
+            <a href="/donative/{{asociation._id}}" class="btn a-send-to-donative">Donar</a>
+          </div>
+          <div class="col l6 center">
+            <a href="/pets_asociation" class="btn a-send-to-pets">Mascotas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col l7 s6 m6 div-right-image-association">
+        <img src="/images/asociaciones/layer_association.jpg" class="responsive-img" alt="">
+      </div>
+      <div class="col l12 s12 m12 div-media-association row">
+        <h3 class="center title-media-video-association">Videos</h3>
+        <div class="col l4">
+          {{#if asociation.video0}}
+          <video id='my-video' class='video-js' controls preload='auto' width='100%' height='250'
+             data-setup='{}'>
+              <source src='/videos/asociation/{{asociation.video0}}' type='video/mp4'>
+              <p class='vjs-no-js'>
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+              </p>
+            </video>
+          {{/if}}
+        </div>
+
+        <div class="col l4">
+          {{#if asociation.video1}}
+          <video id='my-video' class='video-js' controls preload='auto' width='100%' height='250'
+             data-setup='{}'>
+              <source src='/videos/asociation/{{asociation.video1}}' type='video/mp4'>
+              <source src='MY_VIDEO.webm' type='video/webm'>
+              <p class='vjs-no-js'>
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+              </p>
+            </video>
+            {{/if}}
+        </div>
+        <div class="col l4">
+          {{#if asociation.video2}}
+          <video id='my-video' class='video-js' controls preload='auto' width='100%' height='250'
+             data-setup='{}'>
+              <source src='/videos/asociation/{{asociation.video2}}' type='video/mp4'>
+              <source src='MY_VIDEO.webm' type='video/webm'>
+              <p class='vjs-no-js'>
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+              </p>
+            </video>
+            {{/if}}
+        </div>
+
+        <div class="col l12 row">
+          <h3 class="center title-media-image-association">Imagenes</h3>
+
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen0}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen1}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen2}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen3}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen4}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen5}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen6}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col l3 hover01 column">
+            <div>
+              <figure>
+                <img src="/images/demo_asociation/{{asociation.imagen7}}" class="responsive-img" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
